@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>
@@ -196,7 +196,7 @@ final class Token
                 throw new \LogicException(\sprintf('Token of type "%s" does not exist.', $type));
         }
 
-        return $short ? $name : 'Twig\Token::'.$name;
+        return $short ? $name : 'Symfony\Component\Twig\Token::'.$name;
     }
 
     public static function typeToEnglish(int $type): string

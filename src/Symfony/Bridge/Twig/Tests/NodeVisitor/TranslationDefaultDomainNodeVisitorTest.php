@@ -15,10 +15,10 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\NodeVisitor\TranslationDefaultDomainNodeVisitor;
 use Symfony\Bridge\Twig\NodeVisitor\TranslationNodeVisitor;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Node;
 
 class TranslationDefaultDomainNodeVisitorTest extends TestCase
 {

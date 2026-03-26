@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
 /**
  * Exposes a template to userland.
@@ -20,7 +20,7 @@ final class TemplateWrapper
 {
     /**
      * This method is for internal use only and should never be called
-     * directly (use Twig\Environment::load() instead).
+     * directly (use Symfony\Component\Twig\Environment::load() instead).
      *
      * @internal
      */

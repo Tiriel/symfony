@@ -9,110 +9,110 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\DeprecatedCallableInfo;
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\Infix\ArrowExpressionParser;
-use Twig\ExpressionParser\Infix\AssignmentExpressionParser;
-use Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
-use Twig\ExpressionParser\Infix\ConditionalTernaryExpressionParser;
-use Twig\ExpressionParser\Infix\DotExpressionParser;
-use Twig\ExpressionParser\Infix\FilterExpressionParser;
-use Twig\ExpressionParser\Infix\FunctionExpressionParser;
-use Twig\ExpressionParser\Infix\IsExpressionParser;
-use Twig\ExpressionParser\Infix\IsNotExpressionParser;
-use Twig\ExpressionParser\Infix\SquareBracketExpressionParser;
-use Twig\ExpressionParser\InfixAssociativity;
-use Twig\ExpressionParser\PrecedenceChange;
-use Twig\ExpressionParser\Prefix\GroupingExpressionParser;
-use Twig\ExpressionParser\Prefix\LiteralExpressionParser;
-use Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
-use Twig\Markup;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\Binary\AddBinary;
-use Twig\Node\Expression\Binary\AndBinary;
-use Twig\Node\Expression\Binary\BitwiseAndBinary;
-use Twig\Node\Expression\Binary\BitwiseOrBinary;
-use Twig\Node\Expression\Binary\BitwiseXorBinary;
-use Twig\Node\Expression\Binary\ConcatBinary;
-use Twig\Node\Expression\Binary\DivBinary;
-use Twig\Node\Expression\Binary\ElvisBinary;
-use Twig\Node\Expression\Binary\EndsWithBinary;
-use Twig\Node\Expression\Binary\EqualBinary;
-use Twig\Node\Expression\Binary\FloorDivBinary;
-use Twig\Node\Expression\Binary\GreaterBinary;
-use Twig\Node\Expression\Binary\GreaterEqualBinary;
-use Twig\Node\Expression\Binary\HasEveryBinary;
-use Twig\Node\Expression\Binary\HasSomeBinary;
-use Twig\Node\Expression\Binary\InBinary;
-use Twig\Node\Expression\Binary\LessBinary;
-use Twig\Node\Expression\Binary\LessEqualBinary;
-use Twig\Node\Expression\Binary\MatchesBinary;
-use Twig\Node\Expression\Binary\ModBinary;
-use Twig\Node\Expression\Binary\MulBinary;
-use Twig\Node\Expression\Binary\NotEqualBinary;
-use Twig\Node\Expression\Binary\NotInBinary;
-use Twig\Node\Expression\Binary\NotSameAsBinary;
-use Twig\Node\Expression\Binary\NullCoalesceBinary;
-use Twig\Node\Expression\Binary\OrBinary;
-use Twig\Node\Expression\Binary\PowerBinary;
-use Twig\Node\Expression\Binary\RangeBinary;
-use Twig\Node\Expression\Binary\SameAsBinary;
-use Twig\Node\Expression\Binary\SpaceshipBinary;
-use Twig\Node\Expression\Binary\StartsWithBinary;
-use Twig\Node\Expression\Binary\SubBinary;
-use Twig\Node\Expression\Binary\XorBinary;
-use Twig\Node\Expression\BlockReferenceExpression;
-use Twig\Node\Expression\Filter\DefaultFilter;
-use Twig\Node\Expression\FunctionNode\EnumCasesFunction;
-use Twig\Node\Expression\FunctionNode\EnumFunction;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\ParentExpression;
-use Twig\Node\Expression\Test\ConstantTest;
-use Twig\Node\Expression\Test\DefinedTest;
-use Twig\Node\Expression\Test\DivisiblebyTest;
-use Twig\Node\Expression\Test\EvenTest;
-use Twig\Node\Expression\Test\NullTest;
-use Twig\Node\Expression\Test\OddTest;
-use Twig\Node\Expression\Test\SameasTest;
-use Twig\Node\Expression\Test\TrueTest;
-use Twig\Node\Expression\Unary\NegUnary;
-use Twig\Node\Expression\Unary\NotUnary;
-use Twig\Node\Expression\Unary\PosUnary;
-use Twig\Node\Expression\Unary\SpreadUnary;
-use Twig\Node\Node;
-use Twig\Parser;
-use Twig\Sandbox\SecurityNotAllowedMethodError;
-use Twig\Sandbox\SecurityNotAllowedPropertyError;
-use Twig\Source;
-use Twig\Template;
-use Twig\TemplateWrapper;
-use Twig\TokenParser\ApplyTokenParser;
-use Twig\TokenParser\BlockTokenParser;
-use Twig\TokenParser\DeprecatedTokenParser;
-use Twig\TokenParser\DoTokenParser;
-use Twig\TokenParser\EmbedTokenParser;
-use Twig\TokenParser\ExtendsTokenParser;
-use Twig\TokenParser\FlushTokenParser;
-use Twig\TokenParser\ForTokenParser;
-use Twig\TokenParser\FromTokenParser;
-use Twig\TokenParser\GuardTokenParser;
-use Twig\TokenParser\IfTokenParser;
-use Twig\TokenParser\ImportTokenParser;
-use Twig\TokenParser\IncludeTokenParser;
-use Twig\TokenParser\MacroTokenParser;
-use Twig\TokenParser\SetTokenParser;
-use Twig\TokenParser\TypesTokenParser;
-use Twig\TokenParser\UseTokenParser;
-use Twig\TokenParser\WithTokenParser;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
-use Twig\Util\CallableArgumentsExtractor;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\Infix\ArrowExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\AssignmentExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\ConditionalTernaryExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\DotExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\FilterExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\FunctionExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\IsExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\IsNotExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\SquareBracketExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\InfixAssociativity;
+use Symfony\Component\Twig\ExpressionParser\PrecedenceChange;
+use Symfony\Component\Twig\ExpressionParser\Prefix\GroupingExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Prefix\LiteralExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\Binary\AddBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\AndBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\BitwiseAndBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\BitwiseOrBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\BitwiseXorBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\ConcatBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\DivBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\ElvisBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\EndsWithBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\EqualBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\FloorDivBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\GreaterBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\GreaterEqualBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\HasEveryBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\HasSomeBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\InBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\LessBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\LessEqualBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\MatchesBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\ModBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\MulBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\NotEqualBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\NotInBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\NotSameAsBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\NullCoalesceBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\OrBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\PowerBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\RangeBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\SameAsBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\SpaceshipBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\StartsWithBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\SubBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\XorBinary;
+use Symfony\Component\Twig\Node\Expression\BlockReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\Filter\DefaultFilter;
+use Symfony\Component\Twig\Node\Expression\FunctionNode\EnumCasesFunction;
+use Symfony\Component\Twig\Node\Expression\FunctionNode\EnumFunction;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\ParentExpression;
+use Symfony\Component\Twig\Node\Expression\Test\ConstantTest;
+use Symfony\Component\Twig\Node\Expression\Test\DefinedTest;
+use Symfony\Component\Twig\Node\Expression\Test\DivisiblebyTest;
+use Symfony\Component\Twig\Node\Expression\Test\EvenTest;
+use Symfony\Component\Twig\Node\Expression\Test\NullTest;
+use Symfony\Component\Twig\Node\Expression\Test\OddTest;
+use Symfony\Component\Twig\Node\Expression\Test\SameasTest;
+use Symfony\Component\Twig\Node\Expression\Test\TrueTest;
+use Symfony\Component\Twig\Node\Expression\Unary\NegUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\NotUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\PosUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\SpreadUnary;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedMethodError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedPropertyError;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
+use Symfony\Component\Twig\TokenParser\ApplyTokenParser;
+use Symfony\Component\Twig\TokenParser\BlockTokenParser;
+use Symfony\Component\Twig\TokenParser\DeprecatedTokenParser;
+use Symfony\Component\Twig\TokenParser\DoTokenParser;
+use Symfony\Component\Twig\TokenParser\EmbedTokenParser;
+use Symfony\Component\Twig\TokenParser\ExtendsTokenParser;
+use Symfony\Component\Twig\TokenParser\FlushTokenParser;
+use Symfony\Component\Twig\TokenParser\ForTokenParser;
+use Symfony\Component\Twig\TokenParser\FromTokenParser;
+use Symfony\Component\Twig\TokenParser\GuardTokenParser;
+use Symfony\Component\Twig\TokenParser\IfTokenParser;
+use Symfony\Component\Twig\TokenParser\ImportTokenParser;
+use Symfony\Component\Twig\TokenParser\IncludeTokenParser;
+use Symfony\Component\Twig\TokenParser\MacroTokenParser;
+use Symfony\Component\Twig\TokenParser\SetTokenParser;
+use Symfony\Component\Twig\TokenParser\TypesTokenParser;
+use Symfony\Component\Twig\TokenParser\UseTokenParser;
+use Symfony\Component\Twig\TokenParser\WithTokenParser;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
+use Symfony\Component\Twig\Util\CallableArgumentsExtractor;
 
 final class CoreExtension extends AbstractExtension
 {
@@ -1672,7 +1672,7 @@ final class CoreExtension extends AbstractExtension
      * @param mixed  $object            The object or array from where to get the item
      * @param mixed  $item              The item to get from the array or object
      * @param array  $arguments         An array of arguments to pass if the item is an object method
-     * @param string $type              The type of attribute (@see \Twig\Template constants)
+     * @param string $type              The type of attribute (@see \Symfony\Component\Twig\Template constants)
      * @param bool   $isDefinedTest     Whether this is only a defined check
      * @param bool   $ignoreStrictCheck Whether to ignore the strict attribute check or not
      * @param int    $lineno            The template line where the attribute was called
@@ -1773,7 +1773,7 @@ final class CoreExtension extends AbstractExtension
         }
 
         if ($object instanceof Template) {
-            throw new RuntimeError('Accessing \Twig\Template attributes is forbidden.', $lineno, $source);
+            throw new RuntimeError('Accessing \Symfony\Component\Twig\Template attributes is forbidden.', $lineno, $source);
         }
 
         // object property

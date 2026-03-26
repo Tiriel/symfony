@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\IfNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\IfNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Token;
 
 /**
  * Tests a condition.

@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\EmptyExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\EmptyExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @internal

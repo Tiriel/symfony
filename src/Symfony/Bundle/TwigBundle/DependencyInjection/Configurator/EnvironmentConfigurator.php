@@ -12,8 +12,8 @@
 namespace Symfony\Bundle\TwigBundle\DependencyInjection\Configurator;
 
 use Symfony\Bridge\Twig\UndefinedCallableHandler;
-use Twig\Environment;
-use Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\CoreExtension;
 
 /**
  * Twig environment configurator.

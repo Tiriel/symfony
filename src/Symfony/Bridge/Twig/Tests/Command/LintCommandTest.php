@@ -21,10 +21,10 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Tester\CommandCompletionTester;
 use Symfony\Component\Console\Tester\CommandTester;
-use Twig\DeprecatedCallableInfo;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\TwigFilter;
 
 class LintCommandTest extends TestCase
 {

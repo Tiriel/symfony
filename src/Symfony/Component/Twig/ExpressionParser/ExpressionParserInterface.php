@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser;
+namespace Symfony\Component\Twig\ExpressionParser;
 
 /**
  * @method list<string> getOperatorTokens() Returns the operator token strings that this expression parser handles.

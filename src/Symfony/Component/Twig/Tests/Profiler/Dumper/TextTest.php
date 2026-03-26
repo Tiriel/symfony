@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Profiler\Dumper;
+namespace Symfony\Component\Twig\Tests\Profiler\Dumper;
 
 /*
  * This file is part of Twig.
@@ -20,7 +20,7 @@ namespace Twig\Tests\Profiler\Dumper;
  * file that was distributed with this source code.
  */
 
-use Twig\Profiler\Dumper\TextDumper;
+use Symfony\Component\Twig\Profiler\Dumper\TextDumper;
 
 class TextTest extends ProfilerTestCase
 {

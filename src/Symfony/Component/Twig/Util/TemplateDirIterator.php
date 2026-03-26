@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Util;
+namespace Symfony\Component\Twig\Util;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

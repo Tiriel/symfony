@@ -15,10 +15,10 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Extension\RoutingExtension;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Source;
 
 class RoutingExtensionTest extends TestCase
 {

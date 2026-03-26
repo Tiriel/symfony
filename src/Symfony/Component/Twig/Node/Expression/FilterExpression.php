@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\Compiler;
-use Twig\Node\NameDeprecation;
-use Twig\Node\Node;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\NameDeprecation;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigFilter;
 
 class FilterExpression extends CallExpression
 {

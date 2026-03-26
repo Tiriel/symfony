@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\FunctionNode;
+namespace Symfony\Component\Twig\Node\Expression\FunctionNode;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
 
 class EnumCasesFunction extends FunctionExpression
 {

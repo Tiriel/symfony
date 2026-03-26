@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,7 +21,7 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\FileExtensionEscapingStrategy;
+use Symfony\Component\Twig\FileExtensionEscapingStrategy;
 
 class FileExtensionEscapingStrategyTest extends TestCase
 {

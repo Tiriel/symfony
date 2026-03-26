@@ -17,8 +17,8 @@ use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Symfony\Bridge\Twig\Translation\TwigExtractor;
 use Symfony\Component\Translation\IdentityTranslator;
 use Symfony\Component\Translation\MessageCatalogue;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class TwigExtractorTest extends TestCase
 {
@@ -76,9 +76,9 @@ class TwigExtractorTest extends TestCase
             ['{{ "new key" | trans(domain="domain") }}', ['new key' => 'domain']],
 
             // make sure this works with const domain
-            ['{{ "new key" | trans({}, constant(\'Symfony\\\\Bridge\\\\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\')) }}', ['new key' => self::CUSTOM_DOMAIN]],
-            ['{% trans from constant(\'Symfony\\\\Bridge\\\\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\') %}new key{% endtrans %}', ['new key' => self::CUSTOM_DOMAIN]],
-            ['{{ t("new key", {}, constant(\'Symfony\\\\Bridge\\\\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\')) | trans() }}', ['new key' => self::CUSTOM_DOMAIN]],
+            ['{{ "new key" | trans({}, constant(\'Symfony\\\\Bridge\\\\Symfony\Component\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\')) }}', ['new key' => self::CUSTOM_DOMAIN]],
+            ['{% trans from constant(\'Symfony\\\\Bridge\\\\Symfony\Component\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\') %}new key{% endtrans %}', ['new key' => self::CUSTOM_DOMAIN]],
+            ['{{ t("new key", {}, constant(\'Symfony\\\\Bridge\\\\Symfony\Component\Twig\\\\Tests\\\\Translation\\\\TwigExtractorTest::CUSTOM_DOMAIN\')) | trans() }}', ['new key' => self::CUSTOM_DOMAIN]],
 
             // concat translations
             ['{{ ("new" ~ " key") | trans() }}', ['new key' => 'messages']],

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser;
+namespace Symfony\Component\Twig\ExpressionParser;
 
 /**
  * Represents a precedence change.

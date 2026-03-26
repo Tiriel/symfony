@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Node\Node;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>
@@ -74,7 +74,7 @@ class Compiler
             $node->compile($this);
 
             if ($this->didUseEcho) {
-                trigger_deprecation('twig/twig', '3.9', 'Using "%s" is deprecated, use "yield" instead in "%s", then flag the class with #[\Twig\Attribute\YieldReady].', $this->didUseEcho, $node::class);
+                trigger_deprecation('twig/twig', '3.9', 'Using "%s" is deprecated, use "yield" instead in "%s", then flag the class with #[\Symfony\Component\Twig\Attribute\YieldReady].', $this->didUseEcho, $node::class);
             }
 
             return $this;
@@ -99,7 +99,7 @@ class Compiler
             $node->compile($this);
 
             if ($this->didUseEcho) {
-                trigger_deprecation('twig/twig', '3.9', 'Using "%s" is deprecated, use "yield" instead in "%s", then flag the class with #[\Twig\Attribute\YieldReady].', $this->didUseEcho, $node::class);
+                trigger_deprecation('twig/twig', '3.9', 'Using "%s" is deprecated, use "yield" instead in "%s", then flag the class with #[\Symfony\Component\Twig\Attribute\YieldReady].', $this->didUseEcho, $node::class);
             }
 
             return $this;

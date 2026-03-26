@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\NodeVisitor\OptimizerNodeVisitor;
+use Symfony\Component\Twig\NodeVisitor\OptimizerNodeVisitor;
 
 final class OptimizerExtension extends AbstractExtension
 {

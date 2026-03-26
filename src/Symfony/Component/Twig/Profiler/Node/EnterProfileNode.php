@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Profiler\Node;
+namespace Symfony\Component\Twig\Profiler\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Represents a profile enter node.
@@ -34,7 +34,7 @@ class EnterProfileNode extends Node
             ->write(\sprintf('$%s = $this->extensions[', $this->getAttribute('var_name')))
             ->repr($this->getAttribute('extension_name'))
             ->raw("];\n")
-            ->write(\sprintf('$%s->enter($%s = new \Twig\Profiler\Profile($this->getTemplateName(), ', $this->getAttribute('var_name'), $this->getAttribute('var_name').'_prof'))
+            ->write(\sprintf('$%s->enter($%s = new \Symfony\Component\Twig\Profiler\Profile($this->getTemplateName(), ', $this->getAttribute('var_name'), $this->getAttribute('var_name').'_prof'))
             ->repr($this->getAttribute('type'))
             ->raw(', ')
             ->repr($this->getAttribute('name'))

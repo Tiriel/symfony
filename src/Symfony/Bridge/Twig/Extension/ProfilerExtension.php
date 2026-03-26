@@ -13,8 +13,8 @@ namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Stopwatch\Stopwatch;
 use Symfony\Component\Stopwatch\StopwatchEvent;
-use Twig\Extension\ProfilerExtension as BaseProfilerExtension;
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Extension\ProfilerExtension as BaseProfilerExtension;
+use Symfony\Component\Twig\Profiler\Profile;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,18 +20,18 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\DeprecatedNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\IfNode;
-use Twig\Node\Nodes;
-use Twig\Source;
-use Twig\Test\NodeTestCase;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\DeprecatedNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\IfNode;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\TwigFunction;
 
 class DeprecatedTest extends NodeTestCase
 {
@@ -78,7 +78,7 @@ EOF
         ];
 
         $environment = new Environment(new ArrayLoader());
-        $environment->addFunction($function = new TwigFunction('foo', 'Twig\Tests\Node\foo', []));
+        $environment->addFunction($function = new TwigFunction('foo', 'Symfony\Component\Twig\Tests\Node\foo', []));
 
         $expr = new FunctionExpression($function, new EmptyNode(), 1);
         $node = new DeprecatedNode($expr, 1);
@@ -91,7 +91,7 @@ EOF
 
         $tests[] = [$node, <<<EOF
 // line 1
-\$$varName = Twig\Tests\Node\\foo();
+\$$varName = Symfony\Component\Twig\Tests\Node\\foo();
 trigger_deprecation("twig/twig", "1.1", \$$varName." in \"foo.twig\" at line 1.");
 EOF, $environment];
 

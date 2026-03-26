@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -22,12 +22,12 @@ namespace Twig\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Environment;
-use Twig\Error\SyntaxError;
-use Twig\Lexer;
-use Twig\Loader\ArrayLoader;
-use Twig\Source;
-use Twig\Token;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Lexer;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Token;
 
 class LexerTest extends TestCase
 {

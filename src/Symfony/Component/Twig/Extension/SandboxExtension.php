@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\NodeVisitor\SandboxNodeVisitor;
-use Twig\Sandbox\SecurityNotAllowedMethodError;
-use Twig\Sandbox\SecurityNotAllowedPropertyError;
-use Twig\Sandbox\SecurityPolicyInterface;
-use Twig\Sandbox\SourcePolicyInterface;
-use Twig\Source;
-use Twig\TokenParser\SandboxTokenParser;
+use Symfony\Component\Twig\NodeVisitor\SandboxNodeVisitor;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedMethodError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedPropertyError;
+use Symfony\Component\Twig\Sandbox\SecurityPolicyInterface;
+use Symfony\Component\Twig\Sandbox\SourcePolicyInterface;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\TokenParser\SandboxTokenParser;
 
 final class SandboxExtension extends AbstractExtension
 {

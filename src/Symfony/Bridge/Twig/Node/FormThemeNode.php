@@ -12,9 +12,9 @@
 namespace Symfony\Bridge\Twig\Node;
 
 use Symfony\Component\Form\FormRenderer;
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

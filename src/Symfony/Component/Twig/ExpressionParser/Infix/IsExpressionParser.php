@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser\Infix;
+namespace Symfony\Component\Twig\ExpressionParser\Infix;
 
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\ExpressionParser\AbstractExpressionParser;
-use Twig\ExpressionParser\ExpressionParserDescriptionInterface;
-use Twig\ExpressionParser\InfixAssociativity;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\MacroReferenceExpression;
-use Twig\Node\Expression\NameExpression;
-use Twig\Node\Nodes;
-use Twig\Parser;
-use Twig\Token;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\ExpressionParser\AbstractExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserDescriptionInterface;
+use Symfony\Component\Twig\ExpressionParser\InfixAssociativity;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\MacroReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\NameExpression;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * @internal

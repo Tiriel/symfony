@@ -11,10 +11,10 @@
 
 namespace Symfony\Bridge\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\Variable\LocalVariable;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @author Julien Galenski <julien.galenski@gmail.com>
@@ -53,7 +53,7 @@ final class DumpNode extends Node
                 ->write(\sprintf('$%svars = [];'."\n", $varPrefix))
                 ->write(\sprintf('foreach ($context as $%1$skey => $%1$sval) {'."\n", $varPrefix))
                 ->indent()
-                ->write(\sprintf('if (!$%sval instanceof \Twig\Template) {'."\n", $varPrefix))
+                ->write(\sprintf('if (!$%sval instanceof \Symfony\Component\Twig\Template) {'."\n", $varPrefix))
                 ->indent()
                 ->write(\sprintf('$%1$svars[$%1$skey] = $%1$sval;'."\n", $varPrefix))
                 ->outdent()

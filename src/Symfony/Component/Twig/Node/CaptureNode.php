@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
 
 /**
  * Represents a node for which we need to capture the output.
@@ -35,7 +35,7 @@ class CaptureNode extends Node
             $compiler->raw("('' === \$tmp = ");
         }
         $compiler
-            ->raw($useYield ? "implode('', iterator_to_array(" : '\\Twig\\Extension\\CoreExtension::captureOutput(')
+            ->raw($useYield ? "implode('', iterator_to_array(" : '\\Symfony\Component\Twig\\Extension\\CoreExtension::captureOutput(')
             ->raw("(function () use (&\$context, \$macros, \$blocks) {\n")
             ->indent()
             ->subcompile($this->getNode('body'))

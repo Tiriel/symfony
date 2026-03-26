@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Sandbox;
+namespace Symfony\Component\Twig\Sandbox;
 
 /**
  * Exception thrown when a not allowed class method is used in a template.

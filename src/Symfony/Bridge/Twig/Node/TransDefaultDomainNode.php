@@ -11,10 +11,10 @@
 
 namespace Symfony\Bridge\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

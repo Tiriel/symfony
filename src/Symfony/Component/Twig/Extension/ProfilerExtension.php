@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
+use Symfony\Component\Twig\Profiler\Profile;
 
 class ProfilerExtension extends AbstractExtension
 {

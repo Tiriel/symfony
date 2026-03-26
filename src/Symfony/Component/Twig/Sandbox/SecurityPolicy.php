@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Sandbox;
+namespace Symfony\Component\Twig\Sandbox;
 
-use Twig\Markup;
-use Twig\Template;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Template;
 
 /**
  * Represents a security policy which need to be enforced when sandbox mode is enabled.

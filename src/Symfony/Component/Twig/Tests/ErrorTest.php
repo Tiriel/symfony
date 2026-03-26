@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,20 +21,20 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Error\Error;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\Loader\ArrayLoader;
-use Twig\Loader\FilesystemLoader;
-use Twig\Loader\LoaderInterface;
-use Twig\Node\Node;
-use Twig\Source;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Loader\LoaderInterface;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
 
 class ErrorTest extends TestCase
 {
@@ -302,12 +302,12 @@ EOHTML,
                         }
                         if ($this->exceptionWithLineAndContext) {
                             $compiler
-                                ->write('throw new \Twig\Error\RuntimeError("Runtime error.", ')
+                                ->write('throw new \Symfony\Component\Twig\Error\RuntimeError("Runtime error.", ')
                                 ->repr($this->lineno)->raw(', $this->getSourceContext()')
                                 ->raw(");\n")
                             ;
                         } else {
-                            $compiler->write('throw new \Twig\Error\RuntimeError("Runtime error.");');
+                            $compiler->write('throw new \Symfony\Component\Twig\Error\RuntimeError("Runtime error.");');
                         }
                     }
                 };

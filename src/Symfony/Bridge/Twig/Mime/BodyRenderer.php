@@ -19,7 +19,7 @@ use Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface;
 use Symfony\Component\Mime\HtmlToTextConverter\LeagueHtmlToMarkdownConverter;
 use Symfony\Component\Mime\Message;
 use Symfony\Component\Translation\LocaleSwitcher;
-use Twig\Environment;
+use Symfony\Component\Twig\Environment;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

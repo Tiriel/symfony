@@ -17,10 +17,10 @@ use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Symfony\Component\Translation\Loader\ArrayLoader;
 use Symfony\Component\Translation\Translator;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use Twig\Environment;
-use Twig\Error\SyntaxError;
-use Twig\Loader\ArrayLoader as TwigArrayLoader;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Loader\ArrayLoader as TwigArrayLoader;
+use Symfony\Component\Twig\TemplateWrapper;
 
 class TranslationExtensionTest extends TestCase
 {

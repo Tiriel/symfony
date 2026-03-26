@@ -18,8 +18,8 @@ use Symfony\Component\Security\Core\Authorization\UserAuthorizationCheckerInterf
 use Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Http\Impersonate\ImpersonateUrlGenerator;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * SecurityExtension exposes security context features.

@@ -25,12 +25,12 @@ use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Translation\LocaleSwitcher;
 use Symfony\Component\Translation\Translator;
 use Symfony\Component\Validator\Constraint;
-use Twig\Attribute\AsTwigFilter;
-use Twig\Attribute\AsTwigFunction;
-use Twig\Attribute\AsTwigTest;
-use Twig\Extension\ExtensionInterface;
-use Twig\Extension\RuntimeExtensionInterface;
-use Twig\Loader\LoaderInterface;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFunction;
+use Symfony\Component\Twig\Attribute\AsTwigTest;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Extension\RuntimeExtensionInterface;
+use Symfony\Component\Twig\Loader\LoaderInterface;
 
 /**
  * TwigExtension.

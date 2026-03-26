@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
 /**
  * @author Grégoire Pineau <lyrixx@lyrixx.info>

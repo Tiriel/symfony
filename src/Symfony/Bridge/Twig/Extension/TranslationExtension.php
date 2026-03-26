@@ -19,9 +19,9 @@ use Symfony\Component\Translation\TranslatableMessage;
 use Symfony\Contracts\Translation\TranslatableInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Contracts\Translation\TranslatorTrait;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
 
 // Help opcache.preload discover always-needed symbols
 class_exists(TranslatorInterface::class);

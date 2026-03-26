@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
 /*
  * This file is part of Twig.
@@ -20,10 +20,10 @@ namespace Twig\Tests\Node\Expression;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class ContextVariableTest extends NodeTestCase
 {

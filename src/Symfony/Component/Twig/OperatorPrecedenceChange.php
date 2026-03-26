@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\ExpressionParser\PrecedenceChange;
+use Symfony\Component\Twig\ExpressionParser\PrecedenceChange;
 
 /**
  * Represents a precedence change.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
- * @deprecated since Twig 1.20 Use Twig\ExpressionParser\PrecedenceChange instead
+ * @deprecated since Twig 1.20 Use Symfony\Component\Twig\ExpressionParser\PrecedenceChange instead
  */
 class OperatorPrecedenceChange extends PrecedenceChange
 {

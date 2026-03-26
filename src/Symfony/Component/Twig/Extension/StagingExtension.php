@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\TokenParser\TokenParserInterface;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 /**
- * Used by \Twig\Environment as a staging area.
+ * Used by \Symfony\Component\Twig\Environment as a staging area.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *

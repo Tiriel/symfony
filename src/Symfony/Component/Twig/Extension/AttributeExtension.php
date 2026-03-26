@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\Attribute\AsTwigFilter;
-use Twig\Attribute\AsTwigFunction;
-use Twig\Attribute\AsTwigTest;
-use Twig\Environment;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFunction;
+use Symfony\Component\Twig\Attribute\AsTwigTest;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Define Twig filters, functions, and tests with PHP attributes.

@@ -24,11 +24,11 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Finder\Finder;
-use Twig\Environment;
-use Twig\Error\Error;
-use Twig\Loader\ArrayLoader;
-use Twig\Loader\FilesystemLoader;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Source;
 
 /**
  * Command that will validate your template syntax and output encountered errors.

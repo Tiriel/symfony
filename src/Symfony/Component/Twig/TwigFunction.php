@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Represents a template function.

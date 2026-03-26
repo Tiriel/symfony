@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,16 +20,16 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\BodyNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Expression\Variable\LocalVariable;
-use Twig\Node\MacroNode;
-use Twig\Node\TextNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Node\MacroNode;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class MacroTest extends NodeTestCase
 {
@@ -94,7 +94,7 @@ public function macro_foo(\$foo = null, \$bar = "Foo", \$_underscore = null, ...
 
     \$blocks = [];
 
-    return ('' === \$tmp = \\Twig\\Extension\\CoreExtension::captureOutput((function () use (&\$context, \$macros, \$blocks) {
+    return ('' === \$tmp = \\Symfony\Component\Twig\\Extension\\CoreExtension::captureOutput((function () use (&\$context, \$macros, \$blocks) {
         yield "foo";
         yield from [];
     })())) ? '' : new Markup(\$tmp, \$this->env->getCharset());

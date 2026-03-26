@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Profiler;
+namespace Symfony\Component\Twig\Tests\Profiler;
 
 /*
  * This file is part of Twig.
@@ -21,7 +21,7 @@ namespace Twig\Tests\Profiler;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Profiler\Profile;
 
 class ProfileTest extends TestCase
 {

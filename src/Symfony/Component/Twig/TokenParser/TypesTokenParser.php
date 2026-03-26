@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\Node;
-use Twig\Node\TypesNode;
-use Twig\Token;
-use Twig\TokenStream;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\TypesNode;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenStream;
 
 /**
  * Declare variable types.

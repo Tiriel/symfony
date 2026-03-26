@@ -16,9 +16,9 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Translation\Extractor\AbstractFileExtractor;
 use Symfony\Component\Translation\Extractor\ExtractorInterface;
 use Symfony\Component\Translation\MessageCatalogue;
-use Twig\Environment;
-use Twig\Error\Error;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Source;
 
 /**
  * TwigExtractor extracts translation messages from a twig template.

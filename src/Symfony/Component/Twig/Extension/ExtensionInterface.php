@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\ExpressionParser;
-use Twig\ExpressionParser\ExpressionParserInterface;
-use Twig\ExpressionParser\PrecedenceChange;
-use Twig\Node\Expression\Binary\AbstractBinary;
-use Twig\Node\Expression\Unary\AbstractUnary;
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\TokenParser\TokenParserInterface;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\ExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\PrecedenceChange;
+use Symfony\Component\Twig\Node\Expression\Binary\AbstractBinary;
+use Symfony\Component\Twig\Node\Expression\Unary\AbstractUnary;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Interface implemented by extension classes.

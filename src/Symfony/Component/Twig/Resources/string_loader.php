@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Extension\StringLoaderExtension;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\StringLoaderExtension;
+use Symfony\Component\Twig\TemplateWrapper;
 
 /**
  * @internal

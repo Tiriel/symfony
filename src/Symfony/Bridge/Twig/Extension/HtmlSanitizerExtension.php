@@ -12,8 +12,8 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Psr\Container\ContainerInterface;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * @author Titouan Galopin <galopintitouan@gmail.com>

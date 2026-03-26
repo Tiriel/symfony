@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Node\Node;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Abstract class for all nodes that represents an expression.

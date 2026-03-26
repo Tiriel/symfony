@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Source;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Source;
 
 /**
  * Represents a node in the AST.
@@ -53,7 +53,7 @@ class Node implements \Countable, \IteratorAggregate
 
         foreach ($nodes as $name => $node) {
             if (!$node instanceof self) {
-                throw new \InvalidArgumentException(\sprintf('Using "%s" for the value of node "%s" of "%s" is not supported. You must pass a \Twig\Node\Node instance.', get_debug_type($node), $name, static::class));
+                throw new \InvalidArgumentException(\sprintf('Using "%s" for the value of node "%s" of "%s" is not supported. You must pass a \Symfony\Component\Twig\Node\Node instance.', get_debug_type($node), $name, static::class));
             }
         }
         $this->nodes = $nodes;

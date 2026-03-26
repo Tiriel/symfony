@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Ternary;
+namespace Symfony\Component\Twig\Node\Expression\Ternary;
 
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\OperatorEscapeInterface;
-use Twig\Node\Expression\ReturnPrimitiveTypeInterface;
-use Twig\Node\Expression\Test\TrueTest;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\OperatorEscapeInterface;
+use Symfony\Component\Twig\Node\Expression\ReturnPrimitiveTypeInterface;
+use Symfony\Component\Twig\Node\Expression\Test\TrueTest;
+use Symfony\Component\Twig\TwigTest;
 
 final class ConditionalTernary extends AbstractExpression implements OperatorEscapeInterface
 {

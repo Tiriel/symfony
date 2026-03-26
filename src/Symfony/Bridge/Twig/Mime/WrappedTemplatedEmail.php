@@ -14,7 +14,7 @@ namespace Symfony\Bridge\Twig\Mime;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Part\DataPart;
 use Symfony\Component\Mime\Part\File;
-use Twig\Environment;
+use Symfony\Component\Twig\Environment;
 
 /**
  * @internal

@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Extension\ExtensionInterface;
-use Twig\Node\Node;
-use Twig\TwigCallableInterface;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
-use Twig\Util\CallableArgumentsExtractor;
-use Twig\Util\ReflectionCallable;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigCallableInterface;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
+use Symfony\Component\Twig\Util\CallableArgumentsExtractor;
+use Symfony\Component\Twig\Util\ReflectionCallable;
 
 abstract class CallExpression extends AbstractExpression
 {
@@ -52,7 +52,7 @@ abstract class CallExpression extends AbstractExpression
             } elseif (\is_array($callable) && $callable[0] instanceof ExtensionInterface) {
                 $class = \get_class($callable[0]);
                 if (!$compiler->getEnvironment()->hasExtension($class)) {
-                    // Compile a non-optimized call to trigger a \Twig\Error\RuntimeError, which cannot be a compile-time error
+                    // Compile a non-optimized call to trigger a \Symfony\Component\Twig\Error\RuntimeError, which cannot be a compile-time error
                     $compiler->raw(\sprintf('$this->env->getExtension(\'%s\')', $class));
                 } else {
                     $compiler->raw(\sprintf('$this->extensions[\'%s\']', ltrim($class, '\\')));
@@ -131,11 +131,11 @@ abstract class CallExpression extends AbstractExpression
     }
 
     /**
-     * @deprecated since Twig 3.12, use Twig\Util\CallableArgumentsExtractor::getArguments() instead
+     * @deprecated since Twig 3.12, use Symfony\Component\Twig\Util\CallableArgumentsExtractor::getArguments() instead
      */
     protected function getArguments($callable, $arguments)
     {
-        trigger_deprecation('twig/twig', '3.12', 'The "%s()" method is deprecated, use Twig\Util\CallableArgumentsExtractor::getArguments() instead.', __METHOD__);
+        trigger_deprecation('twig/twig', '3.12', 'The "%s()" method is deprecated, use Symfony\Component\Twig\Util\CallableArgumentsExtractor::getArguments() instead.', __METHOD__);
 
         $callType = $this->getAttribute('type');
         $callName = $this->getAttribute('name');

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Variable;
+namespace Symfony\Component\Twig\Node\Expression\Variable;
 
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
 
 final class AssignTemplateVariable extends AbstractExpression
 {

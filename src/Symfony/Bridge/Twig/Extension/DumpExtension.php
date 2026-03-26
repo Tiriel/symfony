@@ -14,10 +14,10 @@ namespace Symfony\Bridge\Twig\Extension;
 use Symfony\Bridge\Twig\TokenParser\DumpTokenParser;
 use Symfony\Component\VarDumper\Cloner\ClonerInterface;
 use Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use Twig\Environment;
-use Twig\Extension\AbstractExtension;
-use Twig\Template;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Provides integration of the dump() function with Twig.

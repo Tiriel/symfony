@@ -16,8 +16,8 @@ use Symfony\Bridge\Twig\ErrorRenderer\TwigErrorRenderer;
 use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class TwigErrorRendererTest extends TestCase
 {

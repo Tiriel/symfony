@@ -15,11 +15,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 use Symfony\Component\HttpKernel\DataCollector\LateDataCollectorInterface;
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Markup;
-use Twig\Profiler\Dumper\HtmlDumper;
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Profiler\Dumper\HtmlDumper;
+use Symfony\Component\Twig\Profiler\Profile;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

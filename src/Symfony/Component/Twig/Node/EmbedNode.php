@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
 
 /**
  * Represents an embed node.

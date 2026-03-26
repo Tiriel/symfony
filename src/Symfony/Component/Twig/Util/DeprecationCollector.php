@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Util;
+namespace Symfony\Component\Twig\Util;
 
-use Twig\Environment;
-use Twig\Error\SyntaxError;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Source;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

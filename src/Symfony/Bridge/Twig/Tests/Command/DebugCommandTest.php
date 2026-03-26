@@ -18,9 +18,9 @@ use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Tester\CommandCompletionTester;
 use Symfony\Component\Console\Tester\CommandTester;
-use Twig\Environment;
-use Twig\Loader\ChainLoader;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ChainLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 class DebugCommandTest extends TestCase
 {

@@ -13,15 +13,15 @@ namespace Symfony\Bridge\Twig\Tests\Node;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Node\SearchAndRenderBlockNode;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Ternary\ConditionalTernary;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Nodes;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Ternary\ConditionalTernary;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\TwigFunction;
 
 class SearchAndRenderBlockNodeTest extends TestCase
 {

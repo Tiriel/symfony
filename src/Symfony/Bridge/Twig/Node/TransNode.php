@@ -11,14 +11,14 @@
 
 namespace Symfony\Bridge\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\Node\TextNode;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\TextNode;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

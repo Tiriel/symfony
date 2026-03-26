@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,10 +21,10 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Error\SyntaxError;
-use Twig\Source;
-use Twig\Token;
-use Twig\TokenStream;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenStream;
 
 class TokenStreamTest extends TestCase
 {

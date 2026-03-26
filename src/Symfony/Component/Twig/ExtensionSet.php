@@ -9,23 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\RuntimeError;
-use Twig\ExpressionParser\ExpressionParsers;
-use Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
-use Twig\ExpressionParser\InfixAssociativity;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\ExpressionParser\PrecedenceChange;
-use Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
-use Twig\Extension\AttributeExtension;
-use Twig\Extension\ExtensionInterface;
-use Twig\Extension\GlobalsInterface;
-use Twig\Extension\LastModifiedExtensionInterface;
-use Twig\Extension\StagingExtension;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParsers;
+use Symfony\Component\Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\InfixAssociativity;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\PrecedenceChange;
+use Symfony\Component\Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
+use Symfony\Component\Twig\Extension\AttributeExtension;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Extension\GlobalsInterface;
+use Symfony\Component\Twig\Extension\LastModifiedExtensionInterface;
+use Symfony\Component\Twig\Extension\StagingExtension;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
 
 // Help opcache.preload discover always-needed symbols
 // @see https://github.com/php/php-src/issues/10131
@@ -491,7 +491,7 @@ final class ExtensionSet
         // token parsers
         foreach ($extension->getTokenParsers() as $parser) {
             if (!$parser instanceof TokenParserInterface) {
-                throw new \LogicException('getTokenParsers() must return an array of \Twig\TokenParser\TokenParserInterface.');
+                throw new \LogicException('getTokenParsers() must return an array of \Symfony\Component\Twig\TokenParser\TokenParserInterface.');
             }
 
             $this->parsers[$parser->getTag()] = $parser;

@@ -19,8 +19,8 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Form\Test\FormIntegrationTestCase;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class TwigRendererEngineTest extends FormIntegrationTestCase
 {

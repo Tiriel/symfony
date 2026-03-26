@@ -9,32 +9,32 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Cache\CacheInterface;
-use Twig\Cache\FilesystemCache;
-use Twig\Cache\NullCache;
-use Twig\Cache\RemovableCacheInterface;
-use Twig\Error\Error;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\ExpressionParsers;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\EscaperExtension;
-use Twig\Extension\ExtensionInterface;
-use Twig\Extension\OptimizerExtension;
-use Twig\Extension\YieldNotReadyExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Loader\ChainLoader;
-use Twig\Loader\LoaderInterface;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\Runtime\EscaperRuntime;
-use Twig\RuntimeLoader\FactoryRuntimeLoader;
-use Twig\RuntimeLoader\RuntimeLoaderInterface;
-use Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\Cache\CacheInterface;
+use Symfony\Component\Twig\Cache\FilesystemCache;
+use Symfony\Component\Twig\Cache\NullCache;
+use Symfony\Component\Twig\Cache\RemovableCacheInterface;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParsers;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\EscaperExtension;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Extension\OptimizerExtension;
+use Symfony\Component\Twig\Extension\YieldNotReadyExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Loader\ChainLoader;
+use Symfony\Component\Twig\Loader\LoaderInterface;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\Runtime\EscaperRuntime;
+use Symfony\Component\Twig\RuntimeLoader\FactoryRuntimeLoader;
+use Symfony\Component\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
 
 /**
  * Stores the Twig configuration and renders templates.
@@ -84,7 +84,7 @@ class Environment
      *  * charset: The charset used by the templates (default to UTF-8).
      *
      *  * cache: An absolute path where to store the compiled templates,
-     *           a \Twig\Cache\CacheInterface implementation,
+     *           a \Symfony\Component\Twig\Cache\CacheInterface implementation,
      *           or false to disable compilation cache (default).
      *
      *  * auto_reload: Whether to reload the template if the original source changed.
@@ -263,7 +263,7 @@ class Environment
      *
      * @param bool $original Whether to return the original cache option or the real cache instance
      *
-     * @return CacheInterface|string|false A Twig\Cache\CacheInterface implementation,
+     * @return CacheInterface|string|false A Symfony\Component\Twig\Cache\CacheInterface implementation,
      *                                     an absolute path to the compiled templates,
      *                                     or false to disable cache
      */
@@ -275,7 +275,7 @@ class Environment
     /**
      * Sets the current cache implementation.
      *
-     * @param CacheInterface|string|false $cache A Twig\Cache\CacheInterface implementation,
+     * @param CacheInterface|string|false $cache A Symfony\Component\Twig\Cache\CacheInterface implementation,
      *                                           an absolute path to the compiled templates,
      *                                           or false to disable cache
      *
@@ -292,7 +292,7 @@ class Environment
         } elseif ($cache instanceof CacheInterface) {
             $this->originalCache = $this->cache = $cache;
         } else {
-            throw new \LogicException('Cache can only be a string, false, or a \Twig\Cache\CacheInterface implementation.');
+            throw new \LogicException('Cache can only be a string, false, or a \Symfony\Component\Twig\Cache\CacheInterface implementation.');
         }
     }
 
@@ -481,7 +481,7 @@ class Environment
     /**
      * Tries to load a template consecutively from an array.
      *
-     * Similar to load() but it also accepts instances of \Twig\TemplateWrapper
+     * Similar to load() but it also accepts instances of \Symfony\Component\Twig\TemplateWrapper
      * and an array of templates where each is tried to be loaded.
      *
      * @param string|TemplateWrapper|array<string|TemplateWrapper> $names A template or an array of templates to try consecutively

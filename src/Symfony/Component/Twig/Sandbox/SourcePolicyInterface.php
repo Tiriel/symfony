@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Sandbox;
+namespace Symfony\Component\Twig\Sandbox;
 
-use Twig\Source;
+use Symfony\Component\Twig\Source;
 
 /**
- * Interface for a class that can optionally enable the sandbox mode based on a template's Twig\Source.
+ * Interface for a class that can optionally enable the sandbox mode based on a template's Symfony\Component\Twig\Source.
  *
  * @author Yaakov Saxon
  */

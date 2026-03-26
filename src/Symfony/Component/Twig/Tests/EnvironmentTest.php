@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -22,31 +22,31 @@ namespace Twig\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Cache\CacheInterface;
-use Twig\Cache\FilesystemCache;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
-use Twig\ExpressionParser\PrefixExpressionParserInterface;
-use Twig\Extension\AbstractExtension;
-use Twig\Extension\ExtensionInterface;
-use Twig\Extension\GlobalsInterface;
-use Twig\Loader\ArrayLoader;
-use Twig\Loader\FilesystemLoader;
-use Twig\Loader\LoaderInterface;
-use Twig\Node\Node;
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\RuntimeLoader\RuntimeLoaderInterface;
-use Twig\Source;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
-use Twig\TokenParser\TokenParserInterface;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Cache\CacheInterface;
+use Symfony\Component\Twig\Cache\FilesystemCache;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\Infix\BinaryOperatorExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\PrefixExpressionParserInterface;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Extension\GlobalsInterface;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Loader\LoaderInterface;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 class EnvironmentTest extends TestCase
 {
@@ -351,7 +351,7 @@ class EnvironmentTest extends TestCase
         $twig->addExtension(new EnvironmentTest_Extension());
 
         $this->expectException(\LogicException::class);
-        $this->expectExceptionMessage('Unable to register extension "Twig\Tests\EnvironmentTest_Extension" as it is already registered.');
+        $this->expectExceptionMessage('Unable to register extension "Symfony\Component\Twig\Tests\EnvironmentTest_Extension" as it is already registered.');
 
         $twig->addExtension(new EnvironmentTest_Extension());
     }
@@ -474,11 +474,11 @@ class EnvironmentTest extends TestCase
 
         if ($twig->useYield()) {
             $this->expectException(SyntaxError::class);
-            $this->expectExceptionMessage('An exception has been thrown during the compilation of a template ("You cannot enable the "use_yield" option of Twig as node "Twig\Tests\EnvironmentTest_LegacyEchoingNode" is not marked as ready for it; please make it ready and then flag it with the #[\Twig\Attribute\YieldReady] attribute.") in "echo_bar".');
+            $this->expectExceptionMessage('An exception has been thrown during the compilation of a template ("You cannot enable the "use_yield" option of Twig as node "Symfony\Component\Twig\Tests\EnvironmentTest_LegacyEchoingNode" is not marked as ready for it; please make it ready and then flag it with the #[\Symfony\Component\Twig\Attribute\YieldReady] attribute.") in "echo_bar".');
         } else {
             $this->expectDeprecation(<<<'EOF'
-Since twig/twig 3.9: Twig node "Twig\Tests\EnvironmentTest_LegacyEchoingNode" is not marked as ready for using "yield" instead of "echo"; please make it ready and then flag it with the #[\Twig\Attribute\YieldReady] attribute.
-  Since twig/twig 3.9: Using "echo" is deprecated, use "yield" instead in "Twig\Tests\EnvironmentTest_LegacyEchoingNode", then flag the class with #[\Twig\Attribute\YieldReady].
+Since twig/twig 3.9: Twig node "Symfony\Component\Twig\Tests\EnvironmentTest_LegacyEchoingNode" is not marked as ready for using "yield" instead of "echo"; please make it ready and then flag it with the #[\Symfony\Component\Twig\Attribute\YieldReady] attribute.
+  Since twig/twig 3.9: Using "echo" is deprecated, use "yield" instead in "Symfony\Component\Twig\Tests\EnvironmentTest_LegacyEchoingNode", then flag the class with #[\Symfony\Component\Twig\Attribute\YieldReady].
 EOF
             );
         }
@@ -677,8 +677,8 @@ class EnvironmentTest_ExtensionWithoutRuntime extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('from_runtime_array', ['Twig\Tests\EnvironmentTest_Runtime', 'fromRuntime']),
-            new TwigFunction('from_runtime_string', 'Twig\Tests\EnvironmentTest_Runtime::fromRuntime'),
+            new TwigFunction('from_runtime_array', ['Symfony\Component\Twig\Tests\EnvironmentTest_Runtime', 'fromRuntime']),
+            new TwigFunction('from_runtime_string', 'Symfony\Component\Twig\Tests\EnvironmentTest_Runtime::fromRuntime'),
         ];
     }
 }

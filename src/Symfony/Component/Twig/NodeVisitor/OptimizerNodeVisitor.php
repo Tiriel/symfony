@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\NodeVisitor;
+namespace Symfony\Component\Twig\NodeVisitor;
 
-use Twig\Environment;
-use Twig\Node\BlockReferenceNode;
-use Twig\Node\Expression\BlockReferenceExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\ParentExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\ForNode;
-use Twig\Node\IncludeNode;
-use Twig\Node\Node;
-use Twig\Node\PrintNode;
-use Twig\Node\TextNode;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\BlockReferenceNode;
+use Symfony\Component\Twig\Node\Expression\BlockReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\ParentExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\ForNode;
+use Symfony\Component\Twig\Node\IncludeNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Node\TextNode;
 
 /**
  * Tries to optimize the AST.
@@ -59,11 +59,11 @@ final class OptimizerNodeVisitor implements NodeVisitorInterface
         }
 
         if (-1 !== $optimizers && self::OPTIMIZE_RAW_FILTER === (self::OPTIMIZE_RAW_FILTER & $optimizers)) {
-            trigger_deprecation('twig/twig', '3.11', 'The "Twig\NodeVisitor\OptimizerNodeVisitor::OPTIMIZE_RAW_FILTER" option is deprecated and does nothing.');
+            trigger_deprecation('twig/twig', '3.11', 'The "Symfony\Component\Twig\NodeVisitor\OptimizerNodeVisitor::OPTIMIZE_RAW_FILTER" option is deprecated and does nothing.');
         }
 
         if (-1 !== $optimizers && self::OPTIMIZE_TEXT_NODES === (self::OPTIMIZE_TEXT_NODES & $optimizers)) {
-            trigger_deprecation('twig/twig', '3.12', 'The "Twig\NodeVisitor\OptimizerNodeVisitor::OPTIMIZE_TEXT_NODES" option is deprecated and does nothing.');
+            trigger_deprecation('twig/twig', '3.12', 'The "Symfony\Component\Twig\NodeVisitor\OptimizerNodeVisitor::OPTIMIZE_TEXT_NODES" option is deprecated and does nothing.');
         }
     }
 

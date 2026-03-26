@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
-use Twig\Node\TypesNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\TypesNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class TypesTest extends NodeTestCase
 {

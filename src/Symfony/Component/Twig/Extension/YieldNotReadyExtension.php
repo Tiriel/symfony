@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\NodeVisitor\YieldNotReadyNodeVisitor;
+use Symfony\Component\Twig\NodeVisitor\YieldNotReadyNodeVisitor;
 
 /**
  * @internal to be removed in Twig 4

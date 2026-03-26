@@ -13,8 +13,8 @@ namespace Symfony\Bridge\Twig\Form;
 
 use Symfony\Component\Form\AbstractRendererEngine;
 use Symfony\Component\Form\FormView;
-use Twig\Environment;
-use Twig\Template;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Template;
 
 /**
  * @author Bernhard Schussek <bschussek@gmail.com>

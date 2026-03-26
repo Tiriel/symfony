@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Node\EmbedNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Node\EmbedNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Embeds a template.

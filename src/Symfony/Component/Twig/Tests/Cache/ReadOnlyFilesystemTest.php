@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Cache;
+namespace Symfony\Component\Twig\Tests\Cache;
 
 /*
  * This file is part of Twig.
@@ -21,8 +21,8 @@ namespace Twig\Tests\Cache;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Cache\ReadOnlyFilesystemCache;
-use Twig\Tests\FilesystemHelper;
+use Symfony\Component\Twig\Cache\ReadOnlyFilesystemCache;
+use Symfony\Component\Twig\Tests\FilesystemHelper;
 
 class ReadOnlyFilesystemTest extends TestCase
 {

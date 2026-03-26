@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Node\Expression\Variable\AssignTemplateVariable;
-use Twig\Node\Expression\Variable\TemplateVariable;
-use Twig\Node\ImportNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignTemplateVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\TemplateVariable;
+use Symfony\Component\Twig\Node\ImportNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Imports macros.

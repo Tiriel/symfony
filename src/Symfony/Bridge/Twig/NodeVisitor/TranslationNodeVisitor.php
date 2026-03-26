@@ -12,13 +12,13 @@
 namespace Symfony\Bridge\Twig\NodeVisitor;
 
 use Symfony\Bridge\Twig\Node\TransNode;
-use Twig\Environment;
-use Twig\Node\Expression\Binary\ConcatBinary;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Node;
-use Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\Expression\Binary\ConcatBinary;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
 
 /**
  * TranslationNodeVisitor extracts translation messages.

@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Test;
+namespace Symfony\Component\Twig\Test;
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Error\Error;
-use Twig\Extension\ExtensionInterface;
-use Twig\Loader\ArrayLoader;
-use Twig\RuntimeLoader\RuntimeLoaderInterface;
-use Twig\TokenParser\TokenParserInterface;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Integration test helper.

@@ -9,24 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser\Infix;
+namespace Symfony\Component\Twig\ExpressionParser\Infix;
 
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\AbstractExpressionParser;
-use Twig\ExpressionParser\ExpressionParserDescriptionInterface;
-use Twig\ExpressionParser\InfixAssociativity;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\Lexer;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\MacroReferenceExpression;
-use Twig\Node\Expression\NameExpression;
-use Twig\Node\Expression\Variable\TemplateVariable;
-use Twig\Parser;
-use Twig\Template;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\AbstractExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserDescriptionInterface;
+use Symfony\Component\Twig\ExpressionParser\InfixAssociativity;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\Lexer;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\MacroReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\NameExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\TemplateVariable;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\Token;
 
 /**
  * @internal

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,11 +20,11 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Ternary\ConditionalTernary;
-use Twig\Node\IncludeNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Ternary\ConditionalTernary;
+use Symfony\Component\Twig\Node\IncludeNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class IncludeTest extends NodeTestCase
 {

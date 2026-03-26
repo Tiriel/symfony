@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\NodeVisitor;
+namespace Symfony\Component\Twig\NodeVisitor;
 
-use Twig\Environment;
-use Twig\Node\CheckSecurityCallNode;
-use Twig\Node\CheckSecurityNode;
-use Twig\Node\CheckToStringNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\Binary\ConcatBinary;
-use Twig\Node\Expression\Binary\RangeBinary;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\Unary\SpreadUnary;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Node\SetNode;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\CheckSecurityCallNode;
+use Symfony\Component\Twig\Node\CheckSecurityNode;
+use Symfony\Component\Twig\Node\CheckToStringNode;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\Binary\ConcatBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\RangeBinary;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\SpreadUnary;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Node\SetNode;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,21 +21,21 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Error\SyntaxError;
-use Twig\Lexer;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\SetNode;
-use Twig\Node\TextNode;
-use Twig\Parser;
-use Twig\Source;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
-use Twig\TokenStream;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Lexer;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\SetNode;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\TokenStream;
 
 class ParserTest extends TestCase
 {

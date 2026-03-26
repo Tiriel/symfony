@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\ForElseNode;
-use Twig\Node\ForNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\ForElseNode;
+use Symfony\Component\Twig\Node\ForNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Loops over each item of a sequence.

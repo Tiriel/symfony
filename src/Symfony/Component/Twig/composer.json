@@ -1,54 +1,39 @@
 {
-    "name": "twig/twig",
+    "name": "symfony/twig",
     "type": "library",
-    "description": "Twig, the flexible, fast, and secure template language for PHP",
-    "keywords": ["templating"],
-    "homepage": "https://twig.symfony.com",
-    "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
+    "description": "A flexible, fast, and secure template engine for PHP",
+    "keywords": ["twig", "templating"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
     "authors": [
         {
             "name": "Fabien Potencier",
-            "email": "fabien@symfony.com",
-            "homepage": "http://fabien.potencier.org",
-            "role": "Lead Developer"
+            "email": "fabien@symfony.com"
         },
         {
-            "name": "Twig Team",
-            "role": "Contributors"
-        },
-        {
-            "name": "Armin Ronacher",
-            "email": "armin.ronacher@active-4.com",
-            "role": "Project Founder"
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
         }
     ],
     "require": {
-        "php": ">=8.1.0",
-        "symfony/deprecation-contracts": "^2.5|^3",
-        "symfony/polyfill-mbstring": "^1.3",
-        "symfony/polyfill-ctype": "^1.8"
+        "php": ">=8.4",
+        "psr/container": "^1.0|^2.0",
+        "symfony/deprecation-contracts": "^2.5|^3"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0",
-        "psr/container": "^1.0|^2.0",
-        "phpstan/phpstan": "^2.0@stable",
-        "php-cs-fixer/shim": "^3.0@stable"
+        "symfony/phpunit-bridge": "^7.4|^8.0"
     },
     "autoload": {
         "files": [
-            "src/Resources/core.php",
-            "src/Resources/debug.php",
-            "src/Resources/escaper.php",
-            "src/Resources/string_loader.php"
+            "Resources/core.php",
+            "Resources/debug.php",
+            "Resources/escaper.php",
+            "Resources/string_loader.php"
         ],
-        "psr-4" : {
-            "Twig\\" : "src/"
-        }
+        "psr-4": { "Symfony\\Component\\Twig\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
     },
-    "autoload-dev": {
-        "psr-4" : {
-            "Twig\\Tests\\" : "tests/"
-        }
-    }
+    "minimum-stability": "dev"
 }

@@ -20,9 +20,9 @@ use Symfony\Component\Mime\HtmlToTextConverter\DefaultHtmlToTextConverter;
 use Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface;
 use Symfony\Component\Mime\Part\Multipart\AlternativePart;
 use Symfony\Component\Translation\LocaleSwitcher;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\TwigFunction;
 
 class BodyRendererTest extends TestCase
 {

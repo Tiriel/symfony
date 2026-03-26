@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser;
+namespace Symfony\Component\Twig\ExpressionParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Parser;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
 
 interface PrefixExpressionParserInterface extends ExpressionParserInterface
 {

@@ -10,16 +10,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\BlockNode;
-use Twig\Node\BlockReferenceNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\BlockNode;
+use Symfony\Component\Twig\Node\BlockReferenceNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Token;
 
 /**
  * Marks a section of a template as being reusable.

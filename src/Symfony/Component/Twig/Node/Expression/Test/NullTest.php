@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Test;
+namespace Symfony\Component\Twig\Node\Expression\Test;
 
-use Twig\Compiler;
-use Twig\Node\Expression\TestExpression;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\TestExpression;
 
 /**
  * Checks that an expression is null.

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Profiler;
+namespace Symfony\Component\Twig\Profiler;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

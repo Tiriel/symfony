@@ -14,10 +14,10 @@ namespace Symfony\Bundle\TwigBundle\CacheWarmer;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface;
 use Symfony\Contracts\Service\ServiceSubscriberInterface;
-use Twig\Cache\CacheInterface;
-use Twig\Cache\NullCache;
-use Twig\Environment;
-use Twig\Error\Error;
+use Symfony\Component\Twig\Cache\CacheInterface;
+use Symfony\Component\Twig\Cache\NullCache;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
 
 /**
  * Generates the Twig cache for all templates.

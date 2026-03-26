@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,10 +21,10 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Extension\EscaperExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Runtime\EscaperRuntime;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\EscaperExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Runtime\EscaperRuntime;
 
 class EscaperTest extends TestCase
 {
@@ -37,7 +37,7 @@ class EscaperTest extends TestCase
     {
         $twig = new Environment(new ArrayLoader());
         $escaperExt = $twig->getExtension(EscaperExtension::class);
-        $escaperExt->setEscaper('foo', 'Twig\Tests\legacy_escaper');
+        $escaperExt->setEscaper('foo', 'Symfony\Component\Twig\Tests\legacy_escaper');
         $this->assertSame($expected, $twig->getRuntime(EscaperRuntime::class)->escape($string, $strategy, 'ISO-8859-1'));
     }
 
@@ -59,7 +59,7 @@ class EscaperTest extends TestCase
     {
         $twig = new Environment(new ArrayLoader());
         $escaperExt = $twig->getExtension(EscaperExtension::class);
-        $escaperExt->setEscaper('foo', 'Twig\Tests\legacy_escaper');
+        $escaperExt->setEscaper('foo', 'Symfony\Component\Twig\Tests\legacy_escaper');
         $this->assertSame($expected, $twig->getRuntime(EscaperRuntime::class)->escape($string, $strategy, 'ISO-8859-1'));
     }
 
@@ -70,11 +70,11 @@ class EscaperTest extends TestCase
     {
         $env1 = new Environment(new ArrayLoader());
         $escaperExt1 = $env1->getExtension(EscaperExtension::class);
-        $escaperExt1->setEscaper('foo', 'Twig\Tests\legacy_escaper');
+        $escaperExt1->setEscaper('foo', 'Symfony\Component\Twig\Tests\legacy_escaper');
 
         $env2 = new Environment(new ArrayLoader());
         $escaperExt2 = $env2->getExtension(EscaperExtension::class);
-        $escaperExt2->setEscaper('foo', 'Twig\Tests\legacy_escaper_again');
+        $escaperExt2->setEscaper('foo', 'Symfony\Component\Twig\Tests\legacy_escaper_again');
 
         $this->assertSame('foo**ISO-8859-1**UTF-8', $env1->getRuntime(EscaperRuntime::class)->escape('foo', 'foo', 'ISO-8859-1'));
         $this->assertSame('foo**ISO-8859-1**UTF-8**again', $env2->getRuntime(EscaperRuntime::class)->escape('foo', 'foo', 'ISO-8859-1'));

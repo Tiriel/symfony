@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Node\FlushNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Node\FlushNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Flushes the output to the client.

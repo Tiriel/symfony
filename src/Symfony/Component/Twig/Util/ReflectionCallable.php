@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Util;
+namespace Symfony\Component\Twig\Util;
 
-use Twig\TwigCallableInterface;
+use Symfony\Component\Twig\TwigCallableInterface;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

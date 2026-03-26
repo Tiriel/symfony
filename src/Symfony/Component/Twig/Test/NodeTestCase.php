@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Test;
+namespace Symfony\Component\Twig\Test;
 
 use PHPUnit\Framework\Attributes\BeforeClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Node;
 
 abstract class NodeTestCase extends TestCase
 {

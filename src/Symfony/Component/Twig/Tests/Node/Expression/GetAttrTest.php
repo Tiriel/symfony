@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
 /*
  * This file is part of Twig.
@@ -20,12 +20,12 @@ namespace Twig\Tests\Node\Expression;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Template;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class GetAttrTest extends NodeTestCase
 {

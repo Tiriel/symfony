@@ -16,10 +16,10 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Extension\StopwatchExtension;
 use Symfony\Component\Stopwatch\Stopwatch;
 use Symfony\Component\Stopwatch\StopwatchEvent;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class StopwatchExtensionTest extends TestCase
 {

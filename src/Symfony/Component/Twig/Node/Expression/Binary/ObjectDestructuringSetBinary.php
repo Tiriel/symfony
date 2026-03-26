@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @internal
@@ -64,7 +64,7 @@ class ObjectDestructuringSetBinary extends AbstractBinary
             if ($i) {
                 $compiler->raw(', ');
             }
-            $compiler->raw('CoreExtension::getAttribute($this->env, $this->source, ')->subcompile($this->getNode('right'))->raw(', ')->repr($mapping['property'])->raw(', [], \\Twig\\Template::ANY_CALL, false, false, false, ')->repr($this->getNode('right')->getTemplateLine())->raw(')');
+            $compiler->raw('CoreExtension::getAttribute($this->env, $this->source, ')->subcompile($this->getNode('right'))->raw(', ')->repr($mapping['property'])->raw(', [], \\Symfony\Component\Twig\\Template::ANY_CALL, false, false, false, ')->repr($this->getNode('right')->getTemplateLine())->raw(')');
         }
         $compiler->raw(']');
     }

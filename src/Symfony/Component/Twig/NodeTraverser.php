@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Node\Node;
-use Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
 
 /**
  * A node traverser.

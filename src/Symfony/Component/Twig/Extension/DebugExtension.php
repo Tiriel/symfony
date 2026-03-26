@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
-use Twig\Environment;
-use Twig\Template;
-use Twig\TemplateWrapper;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
+use Symfony\Component\Twig\TwigFunction;
 
 final class DebugExtension extends AbstractExtension
 {

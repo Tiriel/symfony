@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,16 +21,16 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\SandboxExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Sandbox\SecurityError;
-use Twig\Sandbox\SecurityPolicy;
-use Twig\Source;
-use Twig\Template;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\SandboxExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Sandbox\SecurityError;
+use Symfony\Component\Twig\Sandbox\SecurityPolicy;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
 
 class TemplateTest extends TestCase
 {
@@ -77,7 +77,7 @@ class TemplateTest extends TestCase
             ['{{ null["a"] }}', 'Impossible to access a key ("a") on a null variable in "%s" at line 1.'],
             ['{{ empty_array["a"] }}', 'Key "a" does not exist as the sequence/mapping is empty in "%s" at line 1.'],
             ['{{ array["a"] }}', 'Key "a" for sequence/mapping with keys "foo" does not exist in "%s" at line 1.'],
-            ['{{ array_access["a"] }}', 'Key "a" does not exist in ArrayAccess-able object of class "Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
+            ['{{ array_access["a"] }}', 'Key "a" does not exist in ArrayAccess-able object of class "Symfony\Component\Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
             ['{{ string.a }}', 'Impossible to access an attribute ("a") on a string variable ("foo") in "%s" at line 1.'],
             ['{{ string.a() }}', 'Impossible to invoke a method ("a") on a string variable ("foo") in "%s" at line 1.'],
             ['{{ null.a }}', 'Impossible to access an attribute ("a") on a null variable in "%s" at line 1.'],
@@ -86,8 +86,8 @@ class TemplateTest extends TestCase
             ['{{ empty_array.a }}', 'Key "a" does not exist as the sequence/mapping is empty in "%s" at line 1.'],
             ['{{ array.a }}', 'Key "a" for sequence/mapping with keys "foo" does not exist in "%s" at line 1.'],
             ['{{ array.(-10) }}', 'Key "-10" for sequence/mapping with keys "foo" does not exist in "%s" at line 1.'],
-            ['{{ array_access.a }}', 'Neither the property "a" nor one of the methods "a()", "geta()", "isa()", "hasa()" or "__call()" exist and have public access in class "Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
-            ['{% from _self import foo %}{% macro foo(obj) %}{{ obj.missing_method() }}{% endmacro %}{{ foo(array_access) }}', 'Neither the property "missing_method" nor one of the methods "missing_method()", "getmissing_method()", "ismissing_method()", "hasmissing_method()" or "__call()" exist and have public access in class "Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
+            ['{{ array_access.a }}', 'Neither the property "a" nor one of the methods "a()", "geta()", "isa()", "hasa()" or "__call()" exist and have public access in class "Symfony\Component\Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
+            ['{% from _self import foo %}{% macro foo(obj) %}{{ obj.missing_method() }}{% endmacro %}{{ foo(array_access) }}', 'Neither the property "missing_method" nor one of the methods "missing_method()", "getmissing_method()", "ismissing_method()", "hasmissing_method()" or "__call()" exist and have public access in class "Symfony\Component\Twig\Tests\TemplateArrayAccessObject" in "%s" at line 1.'],
             ['{{ magic_exception.test }}', 'An exception has been thrown during the rendering of a template ("Hey! Don\'t try to isset me!") in "%s" at line 1.'],
             ['{{ object["a"] }}', 'Impossible to access a key "a" on an object of class "stdClass" that does not implement ArrayAccess interface in "%s" at line 1.'],
         ];

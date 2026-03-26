@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
 
 /*
  * This file is part of Twig.

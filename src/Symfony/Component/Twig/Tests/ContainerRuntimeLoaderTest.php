@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -22,7 +22,7 @@ namespace Twig\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
-use Twig\RuntimeLoader\ContainerRuntimeLoader;
+use Symfony\Component\Twig\RuntimeLoader\ContainerRuntimeLoader;
 
 class ContainerRuntimeLoaderTest extends TestCase
 {

@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Error;
+namespace Symfony\Component\Twig\Error;
 
 /**
  * Exception thrown when an error occurs at runtime.

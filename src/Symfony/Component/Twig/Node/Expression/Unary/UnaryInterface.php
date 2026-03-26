@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Unary;
+namespace Symfony\Component\Twig\Node\Expression\Unary;
 
-use Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
 
 /**
  * @internal

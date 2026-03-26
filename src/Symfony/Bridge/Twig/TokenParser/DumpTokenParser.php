@@ -12,11 +12,11 @@
 namespace Symfony\Bridge\Twig\TokenParser;
 
 use Symfony\Bridge\Twig\Node\DumpNode;
-use Twig\Node\Expression\Variable\LocalVariable;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
 
 /**
  * Token Parser for the 'dump' tag.

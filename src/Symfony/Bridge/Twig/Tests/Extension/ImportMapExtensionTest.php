@@ -16,9 +16,9 @@ use Symfony\Bridge\Twig\Extension\ImportMapExtension;
 use Symfony\Bridge\Twig\Extension\ImportMapRuntime;
 use Symfony\Component\AssetMapper\ImportMap\ImportMapRenderer;
 use Symfony\Component\DependencyInjection\ServiceLocator;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\RuntimeLoader\ContainerRuntimeLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\RuntimeLoader\ContainerRuntimeLoader;
 
 class ImportMapExtensionTest extends TestCase
 {

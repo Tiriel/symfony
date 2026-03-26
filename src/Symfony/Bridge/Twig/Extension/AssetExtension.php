@@ -12,8 +12,8 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Asset\Packages;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Twig extension for the Symfony Asset component.

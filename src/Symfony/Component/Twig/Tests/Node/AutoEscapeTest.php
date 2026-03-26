@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,10 +20,10 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\AutoEscapeNode;
-use Twig\Node\Nodes;
-use Twig\Node\TextNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\AutoEscapeNode;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class AutoEscapeTest extends NodeTestCase
 {

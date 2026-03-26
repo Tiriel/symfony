@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\BlockReferenceExpression;
-use Twig\Node\Expression\OperatorEscapeInterface;
-use Twig\Node\Expression\Test\DefinedTest;
-use Twig\Node\Expression\Test\NullTest;
-use Twig\Node\Expression\Unary\NotUnary;
-use Twig\Node\Node;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\BlockReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\OperatorEscapeInterface;
+use Symfony\Component\Twig\Node\Expression\Test\DefinedTest;
+use Symfony\Component\Twig\Node\Expression\Test\NullTest;
+use Symfony\Component\Twig\Node\Expression\Unary\NotUnary;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigTest;
 
 final class NullCoalesceBinary extends AbstractBinary implements OperatorEscapeInterface
 {

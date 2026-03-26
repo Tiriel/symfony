@@ -14,8 +14,8 @@ namespace Symfony\Bridge\Twig\Extension;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\WebLink\GenericLinkProvider;
 use Symfony\Component\WebLink\Link;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Twig extension for the Symfony WebLink component.

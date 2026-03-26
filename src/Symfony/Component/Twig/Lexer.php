@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\ExpressionParsers;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParsers;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Extension\Fixtures;
+namespace Symfony\Component\Twig\Tests\Extension\Fixtures;
 
-use Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
 
 class FilterWithoutValue
 {

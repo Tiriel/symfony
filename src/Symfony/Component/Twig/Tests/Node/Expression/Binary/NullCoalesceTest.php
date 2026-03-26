@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Tests\Node\Expression\Binary;
 
 /*
  * This file is part of Twig.
@@ -20,10 +20,10 @@ namespace Twig\Tests\Node\Expression\Binary;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\Expression\Binary\NullCoalesceBinary;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\Expression\Binary\NullCoalesceBinary;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class NullCoalesceTest extends NodeTestCase
 {

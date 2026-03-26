@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
 /*
  * This file is part of Twig.
@@ -20,16 +20,16 @@ namespace Twig\Tests\Node\Expression;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Error\SyntaxError;
-use Twig\Extension\AbstractExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Nodes;
-use Twig\Test\NodeTestCase;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\TwigFilter;
 
 class FilterTest extends NodeTestCase
 {
@@ -55,7 +55,7 @@ class FilterTest extends NodeTestCase
         $node = self::createFilter($environment, $expr, 'upper');
         $node = self::createFilter($environment, $node, 'number_format', [new ConstantExpression(2, 1), new ConstantExpression('.', 1), new ConstantExpression(',', 1)]);
 
-        $tests[] = [$node, '$this->extensions[\'Twig\Extension\CoreExtension\']->formatNumber(Twig\Extension\CoreExtension::upper($this->env->getCharset(), "foo"), 2, ".", ",")'];
+        $tests[] = [$node, '$this->extensions[\'Symfony\Component\Twig\Extension\CoreExtension\']->formatNumber(Symfony\Component\Twig\Extension\CoreExtension::upper($this->env->getCharset(), "foo"), 2, ".", ",")'];
 
         // named arguments
         $date = new ConstantExpression(0, 1);
@@ -63,25 +63,25 @@ class FilterTest extends NodeTestCase
             'timezone' => new ConstantExpression('America/Chicago', 1),
             'format' => new ConstantExpression('d/m/Y H:i:s P', 1),
         ]);
-        $tests[] = [$node, '$this->extensions[\'Twig\Extension\CoreExtension\']->formatDate(0, "d/m/Y H:i:s P", "America/Chicago")'];
+        $tests[] = [$node, '$this->extensions[\'Symfony\Component\Twig\Extension\CoreExtension\']->formatDate(0, "d/m/Y H:i:s P", "America/Chicago")'];
 
         // skip an optional argument
         $date = new ConstantExpression(0, 1);
         $node = self::createFilter($environment, $date, 'date', [
             'timezone' => new ConstantExpression('America/Chicago', 1),
         ]);
-        $tests[] = [$node, '$this->extensions[\'Twig\Extension\CoreExtension\']->formatDate(0, null, "America/Chicago")'];
+        $tests[] = [$node, '$this->extensions[\'Symfony\Component\Twig\Extension\CoreExtension\']->formatDate(0, null, "America/Chicago")'];
 
         // underscores vs camelCase for named arguments
         $string = new ConstantExpression('abc', 1);
         $node = self::createFilter($environment, $string, 'reverse', [
             'preserve_keys' => new ConstantExpression(true, 1),
         ]);
-        $tests[] = [$node, 'Twig\Extension\CoreExtension::reverse($this->env->getCharset(), "abc", true)'];
+        $tests[] = [$node, 'Symfony\Component\Twig\Extension\CoreExtension::reverse($this->env->getCharset(), "abc", true)'];
         $node = self::createFilter($environment, $string, 'reverse', [
             'preserveKeys' => new ConstantExpression(true, 1),
         ]);
-        $tests[] = [$node, 'Twig\Extension\CoreExtension::reverse($this->env->getCharset(), "abc", true)'];
+        $tests[] = [$node, 'Symfony\Component\Twig\Extension\CoreExtension::reverse($this->env->getCharset(), "abc", true)'];
 
         // filter as an anonymous function
         $node = self::createFilter($environment, new ConstantExpression('foo', 1), 'anonymous');
@@ -89,30 +89,30 @@ class FilterTest extends NodeTestCase
 
         // needs environment
         $node = self::createFilter($environment, $string, 'bar');
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_dummy($this->env, "abc")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_dummy($this->env, "abc")', $environment];
 
         $node = self::createFilter($environment, $string, 'bar_closure');
         $tests[] = [$node, twig_tests_filter_dummy::class.'($this->env, "abc")', $environment];
 
         $node = self::createFilter($environment, $string, 'bar', [new ConstantExpression('bar', 1)]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_dummy($this->env, "abc", "bar")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_dummy($this->env, "abc", "bar")', $environment];
 
         // arbitrary named arguments
         $node = self::createFilter($environment, $string, 'barbar');
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc")', $environment];
 
         $node = self::createFilter($environment, $string, 'barbar', ['foo' => new ConstantExpression('bar', 1)]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", null, null, ["foo" => "bar"])', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", null, null, ["foo" => "bar"])', $environment];
 
         $node = self::createFilter($environment, $string, 'barbar', ['arg2' => new ConstantExpression('bar', 1)]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", null, "bar")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", null, "bar")', $environment];
 
         if (\PHP_VERSION_ID >= 80111) {
             $node = self::createFilter($environment, $string, 'first_class_callable_static');
-            $tests[] = [$node, 'Twig\Tests\Node\Expression\FilterTestExtension::staticMethod("abc")', $environment];
+            $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\FilterTestExtension::staticMethod("abc")', $environment];
 
             $node = self::createFilter($environment, $string, 'first_class_callable_object');
-            $tests[] = [$node, '$this->extensions[\'Twig\Tests\Node\Expression\FilterTestExtension\']->objectMethod("abc")', $environment];
+            $tests[] = [$node, '$this->extensions[\'Symfony\Component\Twig\Tests\Node\Expression\FilterTestExtension\']->objectMethod("abc")', $environment];
         }
 
         $node = self::createFilter($environment, $string, 'barbar', [
@@ -121,7 +121,7 @@ class FilterTest extends NodeTestCase
             new ConstantExpression('3', 1),
             'foo' => new ConstantExpression('bar', 1),
         ]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", "1", "2", ["3", "foo" => "bar"])', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_barbar($context, "abc", "1", "2", ["3", "foo" => "bar"])', $environment];
 
         // from extension
         $node = self::createFilter($environment, $string, 'foo');
@@ -131,7 +131,7 @@ class FilterTest extends NodeTestCase
         $tests[] = [$node, '$this->env->getFilter(\'foobar\')->getCallable()("abc")', $environment];
 
         $node = self::createFilter($environment, $string, 'magic_static');
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\ChildMagicCallStub::magicStaticCall("abc")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\ChildMagicCallStub::magicStaticCall("abc")', $environment];
 
         return $tests;
     }
@@ -175,9 +175,9 @@ class FilterTest extends NodeTestCase
     {
         $env = new Environment(new ArrayLoader());
         $env->addFilter(new TwigFilter('anonymous', static function () {}));
-        $env->addFilter(new TwigFilter('bar', 'Twig\Tests\Node\Expression\twig_tests_filter_dummy', ['needs_environment' => true]));
+        $env->addFilter(new TwigFilter('bar', 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_dummy', ['needs_environment' => true]));
         $env->addFilter(new TwigFilter('bar_closure', \Closure::fromCallable(twig_tests_filter_dummy::class), ['needs_environment' => true]));
-        $env->addFilter(new TwigFilter('barbar', 'Twig\Tests\Node\Expression\twig_tests_filter_barbar', ['needs_context' => true, 'is_variadic' => true]));
+        $env->addFilter(new TwigFilter('barbar', 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_filter_barbar', ['needs_context' => true, 'is_variadic' => true]));
         $env->addFilter(new TwigFilter('magic_static', __NAMESPACE__.'\ChildMagicCallStub::magicStaticCall'));
         if (\PHP_VERSION_ID >= 80111) {
             $env->addExtension(new FilterTestExtension());

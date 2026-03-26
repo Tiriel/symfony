@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\NodeVisitor;
+namespace Symfony\Component\Twig\Tests\NodeVisitor;
 
 /*
  * This file is part of Twig.
@@ -21,15 +21,15 @@ namespace Twig\Tests\NodeVisitor;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\BlockReferenceExpression;
-use Twig\Node\Expression\NameExpression;
-use Twig\Node\Expression\ParentExpression;
-use Twig\Node\ForNode;
-use Twig\Node\Node;
-use Twig\NodeVisitor\OptimizerNodeVisitor;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\BlockReferenceExpression;
+use Symfony\Component\Twig\Node\Expression\NameExpression;
+use Symfony\Component\Twig\Node\Expression\ParentExpression;
+use Symfony\Component\Twig\Node\ForNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\NodeVisitor\OptimizerNodeVisitor;
+use Symfony\Component\Twig\Source;
 
 class OptimizerTest extends TestCase
 {

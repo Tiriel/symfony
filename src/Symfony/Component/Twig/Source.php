@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
 /**
  * Holds information about a non-compiled Twig template.

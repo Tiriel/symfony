@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Attribute;
+namespace Symfony\Component\Twig\Attribute;
 
 /**
  * Marks nodes that are ready to accept a TwigCallable instead of its name.

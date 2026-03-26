@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,9 +21,9 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Extension\ExtensionInterface;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class CustomExtensionTest extends TestCase
 {
@@ -46,7 +46,7 @@ class CustomExtensionTest extends TestCase
     public static function provideInvalidExtensions()
     {
         return [
-            [new InvalidOperatorExtension([1, 2, 3]), '"Twig\Tests\InvalidOperatorExtension::getOperators()" must return an array of 2 elements, got 3.'],
+            [new InvalidOperatorExtension([1, 2, 3]), '"Symfony\Component\Twig\Tests\InvalidOperatorExtension::getOperators()" must return an array of 2 elements, got 3.'],
         ];
     }
 }

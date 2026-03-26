@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
 
 /**
  * Represents a set node.
@@ -28,7 +28,7 @@ class SetNode extends Node implements NodeCaptureInterface
         /*
          * Optimizes the node when capture is used for a large block of text.
          *
-         * {% set foo %}foo{% endset %} is compiled to $context['foo'] = new Twig\Markup("foo");
+         * {% set foo %}foo{% endset %} is compiled to $context['foo'] = new Symfony\Component\Twig\Markup("foo");
          */
         $safe = false;
         if ($capture) {

@@ -20,8 +20,8 @@ use Symfony\Component\Form\ChoiceList\View\ChoiceView;
 use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Security\Csrf\CsrfTokenManager;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 class FormExtensionDivLayoutTest extends AbstractDivLayoutTestCase
 {

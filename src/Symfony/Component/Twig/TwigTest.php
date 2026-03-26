@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Node\Expression\TestExpression;
+use Symfony\Component\Twig\Node\Expression\TestExpression;
 
 /**
  * Represents a template test.

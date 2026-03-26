@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Runtime;
+namespace Symfony\Component\Twig\Tests\Runtime;
 
 /*
  * This file is part of Twig.
@@ -21,8 +21,8 @@ namespace Twig\Tests\Runtime;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Error\RuntimeError;
-use Twig\Runtime\EscaperRuntime;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Runtime\EscaperRuntime;
 
 class EscaperRuntimeTest extends TestCase
 {
@@ -389,7 +389,7 @@ class EscaperRuntimeTest extends TestCase
     public function testCustomEscaper($expected, $string, $strategy, $charset)
     {
         $escaper = new EscaperRuntime();
-        $escaper->setEscaper('foo', 'Twig\Tests\Runtime\escaper');
+        $escaper->setEscaper('foo', 'Symfony\Component\Twig\Tests\Runtime\escaper');
         $this->assertSame($expected, $escaper->escape($string, $strategy, $charset));
     }
 
@@ -417,10 +417,10 @@ class EscaperRuntimeTest extends TestCase
     public static function provideObjectsForEscaping()
     {
         return [
-            ['&lt;br /&gt;', '<br />', ['\Twig\Tests\Runtime\Extension_TestClass' => ['js']]],
-            ['<br />', '\u003Cbr\u0020\/\u003E', ['\Twig\Tests\Runtime\Extension_TestClass' => ['html']]],
-            ['&lt;br /&gt;', '<br />', ['\Twig\Tests\Runtime\Extension_SafeHtmlInterface' => ['js']]],
-            ['<br />', '<br />', ['\Twig\Tests\Runtime\Extension_SafeHtmlInterface' => ['all']]],
+            ['&lt;br /&gt;', '<br />', ['\Symfony\Component\Twig\Tests\Runtime\Extension_TestClass' => ['js']]],
+            ['<br />', '\u003Cbr\u0020\/\u003E', ['\Symfony\Component\Twig\Tests\Runtime\Extension_TestClass' => ['html']]],
+            ['&lt;br /&gt;', '<br />', ['\Symfony\Component\Twig\Tests\Runtime\Extension_SafeHtmlInterface' => ['js']]],
+            ['<br />', '<br />', ['\Symfony\Component\Twig\Tests\Runtime\Extension_SafeHtmlInterface' => ['all']]],
         ];
     }
 }

@@ -12,8 +12,8 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Security\Http\Logout\LogoutUrlGenerator;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * LogoutUrlHelper provides generator functions for the logout URL to Twig.

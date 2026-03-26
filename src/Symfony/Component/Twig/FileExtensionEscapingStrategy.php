@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
 /**
  * Default autoescaping strategy based on file names.

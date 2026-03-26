@@ -28,7 +28,7 @@ use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Stopwatch\Stopwatch;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use Twig\Environment;
+use Symfony\Component\Twig\Environment;
 
 class TwigExtensionTest extends TestCase
 {

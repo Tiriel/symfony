@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -21,13 +21,13 @@ namespace Twig\Tests;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\RuntimeLoader\FactoryRuntimeLoader;
+use Symfony\Component\Twig\RuntimeLoader\FactoryRuntimeLoader;
 
 class FactoryRuntimeLoaderTest extends TestCase
 {
     public function testLoad()
     {
-        $loader = new FactoryRuntimeLoader(['stdClass' => '\Twig\Tests\getRuntime']);
+        $loader = new FactoryRuntimeLoader(['stdClass' => '\Symfony\Component\Twig\Tests\getRuntime']);
 
         $this->assertInstanceOf('stdClass', $loader->load('stdClass'));
     }

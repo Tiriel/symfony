@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Util;
+namespace Symfony\Component\Twig\Tests\Util;
 
 /*
  * This file is part of Twig.
@@ -21,11 +21,11 @@ namespace Twig\Tests\Util;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\DeprecatedCallableInfo;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\TwigFunction;
-use Twig\Util\DeprecationCollector;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\Util\DeprecationCollector;
 
 class DeprecationCollectorTest extends TestCase
 {

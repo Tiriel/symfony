@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Cache;
+namespace Symfony\Component\Twig\Tests\Cache;
 
 /*
  * This file is part of Twig.
@@ -21,9 +21,9 @@ namespace Twig\Tests\Cache;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Cache\ChainCache;
-use Twig\Cache\FilesystemCache;
-use Twig\Tests\FilesystemHelper;
+use Symfony\Component\Twig\Cache\ChainCache;
+use Symfony\Component\Twig\Cache\FilesystemCache;
+use Symfony\Component\Twig\Tests\FilesystemHelper;
 
 class ChainTest extends TestCase
 {
@@ -224,8 +224,8 @@ class ChainTest extends TestCase
     public static function provideInput()
     {
         return [
-            ['Twig\Tests\Cache\ChainTest#_test_', '_test_'],
-            ['Twig\Tests\Cache\ChainTest#_test#with#hashtag_', '_test#with#hashtag_'],
+            ['Symfony\Component\Twig\Tests\Cache\ChainTest#_test_', '_test_'],
+            ['Symfony\Component\Twig\Tests\Cache\ChainTest#_test#with#hashtag_', '_test#with#hashtag_'],
         ];
     }
 

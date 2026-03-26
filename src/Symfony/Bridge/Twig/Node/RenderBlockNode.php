@@ -11,8 +11,8 @@
 
 namespace Symfony\Bridge\Twig\Node;
 
-use Twig\Compiler;
-use Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
 
 /**
  * Compiles a call to {@link \Symfony\Component\Form\FormRendererInterface::renderBlock()}.

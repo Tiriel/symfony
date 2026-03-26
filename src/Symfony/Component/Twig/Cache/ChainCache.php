@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Cache;
+namespace Symfony\Component\Twig\Cache;
 
 /**
  * Chains several caches together.

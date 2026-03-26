@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Source;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Source;
 
 /**
  * Represents a module node.
@@ -168,19 +168,19 @@ final class ModuleNode extends Node
         ;
         if (!$this->getAttribute('index')) {
             $compiler
-                ->write("use Twig\Environment;\n")
-                ->write("use Twig\Error\LoaderError;\n")
-                ->write("use Twig\Error\RuntimeError;\n")
-                ->write("use Twig\Extension\CoreExtension;\n")
-                ->write("use Twig\Extension\SandboxExtension;\n")
-                ->write("use Twig\Markup;\n")
-                ->write("use Twig\Sandbox\SecurityError;\n")
-                ->write("use Twig\Sandbox\SecurityNotAllowedTagError;\n")
-                ->write("use Twig\Sandbox\SecurityNotAllowedFilterError;\n")
-                ->write("use Twig\Sandbox\SecurityNotAllowedFunctionError;\n")
-                ->write("use Twig\Source;\n")
-                ->write("use Twig\Template;\n")
-                ->write("use Twig\TemplateWrapper;\n")
+                ->write("use Symfony\Component\Twig\Environment;\n")
+                ->write("use Symfony\Component\Twig\Error\LoaderError;\n")
+                ->write("use Symfony\Component\Twig\Error\RuntimeError;\n")
+                ->write("use Symfony\Component\Twig\Extension\CoreExtension;\n")
+                ->write("use Symfony\Component\Twig\Extension\SandboxExtension;\n")
+                ->write("use Symfony\Component\Twig\Markup;\n")
+                ->write("use Symfony\Component\Twig\Sandbox\SecurityError;\n")
+                ->write("use Symfony\Component\Twig\Sandbox\SecurityNotAllowedTagError;\n")
+                ->write("use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFilterError;\n")
+                ->write("use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFunctionError;\n")
+                ->write("use Symfony\Component\Twig\Source;\n")
+                ->write("use Symfony\Component\Twig\Template;\n")
+                ->write("use Symfony\Component\Twig\TemplateWrapper;\n")
                 ->write("\n")
             ;
         }

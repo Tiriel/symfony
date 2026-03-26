@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Profiler\Node;
+namespace Symfony\Component\Twig\Profiler\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Represents a profile leave node.

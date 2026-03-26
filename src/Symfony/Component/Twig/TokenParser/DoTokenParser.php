@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Node\DoNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Node\DoNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Evaluates an expression, discarding the returned value.

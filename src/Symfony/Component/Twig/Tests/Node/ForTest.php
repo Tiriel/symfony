@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,13 +20,13 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\ForElseNode;
-use Twig\Node\ForNode;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\ForElseNode;
+use Symfony\Component\Twig\Node\ForNode;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class ForTest extends NodeTestCase
 {

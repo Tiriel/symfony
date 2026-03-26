@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Node\Expression\ReturnPrimitiveTypeInterface;
-use Twig\Node\Expression\Test\TrueTest;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\ReturnPrimitiveTypeInterface;
+use Symfony\Component\Twig\Node\Expression\Test\TrueTest;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Represents an if node.

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
 /**
  * Interface implemented by expressions that support the defined test.

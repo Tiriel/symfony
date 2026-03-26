@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Extension\EscaperExtension;
-use Twig\Node\Node;
-use Twig\Runtime\EscaperRuntime;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\EscaperExtension;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Runtime\EscaperRuntime;
 
 /**
  * @internal

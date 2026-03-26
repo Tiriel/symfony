@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,16 +20,16 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Node\SetNode;
-use Twig\Node\TextNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Node\SetNode;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class SetTest extends NodeTestCase
 {
@@ -72,7 +72,7 @@ EOF, new Environment(new ArrayLoader(), ['use_yield' => true]),
 
         $tests[] = [$node, <<<'EOF'
 // line 1
-$context["foo"] = ('' === $tmp = \Twig\Extension\CoreExtension::captureOutput((function () use (&$context, $macros, $blocks) {
+$context["foo"] = ('' === $tmp = \Symfony\Component\Twig\Extension\CoreExtension::captureOutput((function () use (&$context, $macros, $blocks) {
     yield "foo";
     yield from [];
 })())) ? '' : new Markup($tmp, $this->env->getCharset());

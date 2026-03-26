@@ -10,17 +10,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\Error;
-use Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Error\RuntimeError;
 
 /**
  * Default base class for compiled templates.
  *
  * This class is an implementation detail of how template compilation currently
  * works, which might change. It should never be used directly. Use $twig->load()
- * instead, which returns an instance of \Twig\TemplateWrapper.
+ * instead, which returns an instance of \Symfony\Component\Twig\TemplateWrapper.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
@@ -405,8 +405,8 @@ abstract class Template
                 $e->setSourceContext($this->getSourceContext());
             }
 
-            // this is mostly useful for \Twig\Error\LoaderError exceptions
-            // see \Twig\Error\LoaderError
+            // this is mostly useful for \Symfony\Component\Twig\Error\LoaderError exceptions
+            // see \Symfony\Component\Twig\Error\LoaderError
             if (-1 === $e->getTemplateLine()) {
                 $e->guess();
             }
@@ -438,7 +438,7 @@ abstract class Template
 
         // avoid RCEs when sandbox is enabled
         if (null !== $template && !$template instanceof self) {
-            throw new \LogicException('A block must be a method on a \Twig\Template instance.');
+            throw new \LogicException('A block must be a method on a \Symfony\Component\Twig\Template instance.');
         }
 
         if (null !== $template) {
@@ -449,8 +449,8 @@ abstract class Template
                     $e->setSourceContext($template->getSourceContext());
                 }
 
-                // this is mostly useful for \Twig\Error\LoaderError exceptions
-                // see \Twig\Error\LoaderError
+                // this is mostly useful for \Symfony\Component\Twig\Error\LoaderError exceptions
+                // see \Symfony\Component\Twig\Error\LoaderError
                 if (-1 === $e->getTemplateLine()) {
                     $e->guess();
                 }

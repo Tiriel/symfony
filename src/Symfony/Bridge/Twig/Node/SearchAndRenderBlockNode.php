@@ -11,10 +11,10 @@
 
 namespace Symfony\Bridge\Twig\Node;
 
-use Twig\Compiler;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
 
 /**
  * @author Bernhard Schussek <bschussek@gmail.com>

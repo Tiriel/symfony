@@ -16,13 +16,13 @@ use Symfony\Bridge\Twig\Node\FormThemeNode;
 use Symfony\Bridge\Twig\Test\Traits\RuntimeLoaderProvider;
 use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Form\FormRendererEngineInterface;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Nodes;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Nodes;
 
 class FormThemeTest extends TestCase
 {

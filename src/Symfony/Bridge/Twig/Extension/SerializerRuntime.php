@@ -12,7 +12,7 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Serializer\SerializerInterface;
-use Twig\Extension\RuntimeExtensionInterface;
+use Symfony\Component\Twig\Extension\RuntimeExtensionInterface;
 
 /**
  * @author Jesse Rushlow <jr@rushlow.dev>

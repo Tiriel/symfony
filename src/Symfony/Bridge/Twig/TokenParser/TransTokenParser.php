@@ -12,13 +12,13 @@
 namespace Symfony\Bridge\Twig\TokenParser;
 
 use Symfony\Bridge\Twig\Node\TransNode;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Node;
-use Twig\Node\TextNode;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
 
 /**
  * Token Parser for the 'trans' tag.

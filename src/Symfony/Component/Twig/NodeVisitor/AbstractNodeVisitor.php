@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\NodeVisitor;
+namespace Symfony\Component\Twig\NodeVisitor;
 
-use Twig\Environment;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Used to make node visitors compatible with Twig 1.x and 2.x.

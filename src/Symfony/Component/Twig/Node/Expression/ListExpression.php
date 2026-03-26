@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Compiler;
-use Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
 
 class ListExpression extends AbstractExpression
 {

@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Error\SyntaxError;
 
 /**
  * Represents a token stream.

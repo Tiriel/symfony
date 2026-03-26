@@ -16,10 +16,10 @@ use PHPUnit\Framework\Attributes\IgnoreDeprecations;
 use Symfony\Bridge\Twig\Validator\Constraints\Twig;
 use Symfony\Bridge\Twig\Validator\Constraints\TwigValidator;
 use Symfony\Component\Validator\Test\ConstraintValidatorTestCase;
-use Twig\DeprecatedCallableInfo;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * @author Mokhtar Tlili <tlili.mokhtar@gmail.com>

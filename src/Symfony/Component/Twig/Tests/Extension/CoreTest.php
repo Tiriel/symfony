@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Extension;
+namespace Symfony\Component\Twig\Tests\Extension;
 
 /*
  * This file is part of Twig.
@@ -22,13 +22,13 @@ namespace Twig\Tests\Extension;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\SandboxExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Sandbox\SecurityError;
-use Twig\Sandbox\SecurityPolicy;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\SandboxExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Sandbox\SecurityError;
+use Symfony\Component\Twig\Sandbox\SecurityPolicy;
 
 class CoreTest extends TestCase
 {
@@ -416,7 +416,7 @@ class CoreTest extends TestCase
      */
     public function testCycleWithArrayAccessAndTraversableButNotCountable()
     {
-        $this->expectDeprecation('Since twig/twig 3.12: Passing a non-countable sequence of values to "Twig\Extension\CoreExtension::cycle()" is deprecated.');
+        $this->expectDeprecation('Since twig/twig 3.12: Passing a non-countable sequence of values to "Symfony\Component\Twig\Extension\CoreExtension::cycle()" is deprecated.');
 
         $seq = new class implements \ArrayAccess, \IteratorAggregate {
             public function offsetExists($offset): bool

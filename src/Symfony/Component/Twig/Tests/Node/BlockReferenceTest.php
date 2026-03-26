@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,8 +20,8 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\BlockReferenceNode;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\BlockReferenceNode;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class BlockReferenceTest extends NodeTestCase
 {

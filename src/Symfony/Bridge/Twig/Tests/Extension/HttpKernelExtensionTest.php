@@ -23,10 +23,10 @@ use Symfony\Component\HttpFoundation\UriSigner;
 use Symfony\Component\HttpKernel\Fragment\FragmentHandler;
 use Symfony\Component\HttpKernel\Fragment\FragmentRendererInterface;
 use Symfony\Component\HttpKernel\Fragment\FragmentUriGenerator;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Loader\ArrayLoader;
-use Twig\RuntimeLoader\ContainerRuntimeLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\RuntimeLoader\ContainerRuntimeLoader;
 
 class HttpKernelExtensionTest extends TestCase
 {

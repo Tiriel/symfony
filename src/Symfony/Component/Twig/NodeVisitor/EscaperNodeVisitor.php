@@ -9,23 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\NodeVisitor;
+namespace Symfony\Component\Twig\NodeVisitor;
 
-use Twig\Environment;
-use Twig\Extension\EscaperExtension;
-use Twig\Node\AutoEscapeNode;
-use Twig\Node\BlockNode;
-use Twig\Node\BlockReferenceNode;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\OperatorEscapeInterface;
-use Twig\Node\ImportNode;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\NodeTraverser;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\EscaperExtension;
+use Symfony\Component\Twig\Node\AutoEscapeNode;
+use Symfony\Component\Twig\Node\BlockNode;
+use Symfony\Component\Twig\Node\BlockReferenceNode;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\OperatorEscapeInterface;
+use Symfony\Component\Twig\Node\ImportNode;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\NodeTraverser;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

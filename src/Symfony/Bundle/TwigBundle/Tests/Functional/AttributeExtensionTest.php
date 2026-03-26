@@ -21,13 +21,13 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Exception\LogicException;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpKernel\Kernel;
-use Twig\Attribute\AsTwigFilter;
-use Twig\Attribute\AsTwigFunction;
-use Twig\Attribute\AsTwigTest;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Extension\AbstractExtension;
-use Twig\Extension\AttributeExtension;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFunction;
+use Symfony\Component\Twig\Attribute\AsTwigTest;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Extension\AttributeExtension;
 
 class AttributeExtensionTest extends TestCase
 {
@@ -75,7 +75,7 @@ class AttributeExtensionTest extends TestCase
         };
 
         $this->expectException(LogicException::class);
-        $this->expectExceptionMessage('The class "Symfony\Bundle\TwigBundle\Tests\Functional\InvalidExtensionWithAttributes" cannot extend "Twig\Extension\AbstractExtension" and use the "#[Twig\Attribute\AsTwigFilter]" attribute on method "funFilter()", choose one or the other.');
+        $this->expectExceptionMessage('The class "Symfony\Bundle\TwigBundle\Tests\Functional\InvalidExtensionWithAttributes" cannot extend "Symfony\Component\Twig\Extension\AbstractExtension" and use the "#[Symfony\Component\Twig\Attribute\AsTwigFilter]" attribute on method "funFilter()", choose one or the other.');
 
         $kernel->boot();
     }

@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser\Infix;
+namespace Symfony\Component\Twig\ExpressionParser\Infix;
 
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\Unary\NotUnary;
-use Twig\Parser;
-use Twig\Token;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\NotUnary;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
 
 /**
  * @internal

@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Extension\Fixtures;
+namespace Symfony\Component\Twig\Tests\Extension\Fixtures;
 
-use Twig\Attribute\AsTwigFilter;
-use Twig\Attribute\AsTwigFunction;
-use Twig\Attribute\AsTwigTest;
-use Twig\DeprecatedCallableInfo;
-use Twig\Environment;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFunction;
+use Symfony\Component\Twig\Attribute\AsTwigTest;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Environment;
 
 class ExtensionWithAttributes
 {

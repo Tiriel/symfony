@@ -15,9 +15,9 @@ use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Symfony\Component\Mime\Header\Headers;
 use Symfony\Component\Mime\Part\AbstractPart;
 use Symfony\Component\Mime\Part\DataPart;
-use Twig\Extra\CssInliner\CssInlinerExtension;
-use Twig\Extra\Inky\InkyExtension;
-use Twig\Extra\Markdown\MarkdownExtension;
+use Symfony\Component\Twig\Extra\CssInliner\CssInlinerExtension;
+use Symfony\Component\Twig\Extra\Inky\InkyExtension;
+use Symfony\Component\Twig\Extra\Markdown\MarkdownExtension;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

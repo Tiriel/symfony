@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Attribute;
+namespace Symfony\Component\Twig\Attribute;
 
-use Twig\DeprecatedCallableInfo;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Registers a method as template function.
  *
- * If the first argument of the method has Twig\Environment type-hint, the function will receive the current environment.
+ * If the first argument of the method has Symfony\Component\Twig\Environment type-hint, the function will receive the current environment.
  * Additional arguments of the method come from the function call.
  *
  *     #[AsTwigFunction(name: 'foo')]

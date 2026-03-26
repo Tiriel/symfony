@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * Represents an arrow function.

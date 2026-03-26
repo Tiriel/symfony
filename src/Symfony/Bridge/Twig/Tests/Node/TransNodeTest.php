@@ -13,11 +13,11 @@ namespace Symfony\Bridge\Twig\Tests\Node;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Node\TransNode;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\TextNode;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\TextNode;
 
 /**
  * @author Asmir Mustafic <goetas@gmail.com>

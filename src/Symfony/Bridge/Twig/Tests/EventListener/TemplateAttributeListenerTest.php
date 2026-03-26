@@ -23,8 +23,8 @@ use Symfony\Component\HttpKernel\Event\ControllerArgumentsMetadata;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class TemplateAttributeListenerTest extends TestCase
 {

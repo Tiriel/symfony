@@ -14,8 +14,8 @@ namespace Symfony\Bridge\Twig\Extension;
 use Symfony\Component\Workflow\Registry;
 use Symfony\Component\Workflow\Transition;
 use Symfony\Component\Workflow\TransitionBlockerList;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * WorkflowExtension.

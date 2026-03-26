@@ -13,8 +13,8 @@ namespace Symfony\Bridge\Twig\Tests\Extension;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Extension\ExpressionExtension;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class ExpressionExtensionTest extends TestCase
 {

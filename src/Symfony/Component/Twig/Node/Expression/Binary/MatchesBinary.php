@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\ReturnBoolInterface;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\ReturnBoolInterface;
+use Symfony\Component\Twig\Node\Node;
 
 class MatchesBinary extends AbstractBinary implements ReturnBoolInterface
 {

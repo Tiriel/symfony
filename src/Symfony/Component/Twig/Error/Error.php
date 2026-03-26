@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Error;
+namespace Symfony\Component\Twig\Error;
 
-use Twig\Source;
-use Twig\Template;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
 
 /**
  * Twig base exception.

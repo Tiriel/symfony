@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\ExpressionParser\Infix\FilterExpressionParser;
-use Twig\Node\Expression\Variable\LocalVariable;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Node\SetNode;
-use Twig\Token;
+use Symfony\Component\Twig\ExpressionParser\Infix\FilterExpressionParser;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Node\SetNode;
+use Symfony\Component\Twig\Token;
 
 /**
  * Applies filters on a section of a template.

@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Test;
+namespace Symfony\Component\Twig\Node\Expression\Test;
 
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\SupportDefinedTestInterface;
-use Twig\Node\Expression\TestExpression;
-use Twig\Node\Node;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\SupportDefinedTestInterface;
+use Symfony\Component\Twig\Node\Expression\TestExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Checks if a variable is defined in the current context.

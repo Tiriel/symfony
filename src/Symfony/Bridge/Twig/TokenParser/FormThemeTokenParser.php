@@ -12,10 +12,10 @@
 namespace Symfony\Bridge\Twig\TokenParser;
 
 use Symfony\Bridge\Twig\Node\FormThemeNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Node;
-use Twig\Token;
-use Twig\TokenParser\AbstractTokenParser;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
+use Symfony\Component\Twig\TokenParser\AbstractTokenParser;
 
 /**
  * Token Parser for the 'form_theme' tag.

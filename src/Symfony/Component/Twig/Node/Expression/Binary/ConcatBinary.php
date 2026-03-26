@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Node\Expression\ReturnStringInterface;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\ReturnStringInterface;
 
 class ConcatBinary extends AbstractBinary implements ReturnStringInterface
 {

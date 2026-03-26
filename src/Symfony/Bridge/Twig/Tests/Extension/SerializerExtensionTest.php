@@ -23,9 +23,9 @@ use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
 use Symfony\Component\Serializer\Mapping\Loader\AttributeLoader;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\RuntimeLoader\ContainerRuntimeLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\RuntimeLoader\ContainerRuntimeLoader;
 
 /**
  * @author Jesse Rushlow <jr@rushlow.dev>

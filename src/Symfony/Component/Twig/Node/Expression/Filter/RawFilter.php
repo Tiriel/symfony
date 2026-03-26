@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Filter;
+namespace Symfony\Component\Twig\Node\Expression\Filter;
 
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\Compiler;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Node;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

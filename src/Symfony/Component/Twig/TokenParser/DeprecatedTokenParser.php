@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\DeprecatedNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\DeprecatedNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Deprecates a section of a template.

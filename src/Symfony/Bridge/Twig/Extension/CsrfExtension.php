@@ -11,8 +11,8 @@
 
 namespace Symfony\Bridge\Twig\Extension;
 
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * @author Christian Flothmann <christian.flothmann@sensiolabs.de>

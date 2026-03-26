@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Error\SyntaxError;
-use Twig\Node\BodyNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Unary\NegUnary;
-use Twig\Node\Expression\Unary\PosUnary;
-use Twig\Node\Expression\Variable\LocalVariable;
-use Twig\Node\MacroNode;
-use Twig\Node\Node;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\NegUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\PosUnary;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Node\MacroNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Token;
 
 /**
  * Defines a macro.

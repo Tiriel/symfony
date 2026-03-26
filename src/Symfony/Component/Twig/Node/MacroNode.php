@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node;
+namespace Symfony\Component\Twig\Node;
 
-use Twig\Attribute\YieldReady;
-use Twig\Compiler;
-use Twig\Error\SyntaxError;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\Variable\LocalVariable;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\LocalVariable;
 
 /**
  * Represents a macro node.

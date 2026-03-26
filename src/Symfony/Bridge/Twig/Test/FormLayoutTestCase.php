@@ -18,9 +18,9 @@ use Symfony\Component\Form\FormRendererInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Form\Test\FormIntegrationTestCase;
 use Symfony\Component\Security\Csrf\CsrfTokenManager;
-use Twig\Environment;
-use Twig\Extension\ExtensionInterface;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 /**
  * @author Romain Monteil <monteil.romain@gmail.com>

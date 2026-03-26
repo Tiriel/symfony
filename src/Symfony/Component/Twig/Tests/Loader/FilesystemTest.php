@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Loader;
+namespace Symfony\Component\Twig\Tests\Loader;
 
 /*
  * This file is part of Twig.
@@ -21,9 +21,9 @@ namespace Twig\Tests\Loader;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 class FilesystemTest extends TestCase
 {

@@ -24,9 +24,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\ErrorHandler\ErrorRenderer\FileLinkFormatter;
 use Symfony\Component\Finder\Finder;
-use Twig\Environment;
-use Twig\Loader\ChainLoader;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ChainLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 /**
  * Lists twig functions, filters, globals and tests present in the current project.

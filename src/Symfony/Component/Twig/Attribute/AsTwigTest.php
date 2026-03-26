@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Attribute;
+namespace Symfony\Component\Twig\Attribute;
 
-use Twig\DeprecatedCallableInfo;
-use Twig\TwigTest;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Registers a method as template test.

@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Extension;
+namespace Symfony\Component\Twig\Tests\Extension;
 
 use PHPUnit\Framework\TestCase;
-use Twig\DeprecatedCallableInfo;
-use Twig\Error\RuntimeError;
-use Twig\Extension\AttributeExtension;
-use Twig\ExtensionSet;
-use Twig\Tests\Extension\Fixtures\ExtensionWithAttributes;
-use Twig\Tests\Extension\Fixtures\FilterWithoutValue;
-use Twig\Tests\Extension\Fixtures\TestWithoutValue;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\AttributeExtension;
+use Symfony\Component\Twig\ExtensionSet;
+use Symfony\Component\Twig\Tests\Extension\Fixtures\ExtensionWithAttributes;
+use Symfony\Component\Twig\Tests\Extension\Fixtures\FilterWithoutValue;
+use Symfony\Component\Twig\Tests\Extension\Fixtures\TestWithoutValue;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 class AttributeExtensionTest extends TestCase
 {
@@ -163,7 +163,7 @@ class AttributeExtensionTest extends TestCase
         $this->assertSame($extension2, $extensionSet->getExtension(\stdClass::class));
 
         $this->expectException(RuntimeError::class);
-        $this->expectExceptionMessage('The "Twig\Extension\AttributeExtension" extension is not enabled.');
+        $this->expectExceptionMessage('The "Symfony\Component\Twig\Extension\AttributeExtension" extension is not enabled.');
         $extensionSet->getExtension(AttributeExtension::class);
     }
 }

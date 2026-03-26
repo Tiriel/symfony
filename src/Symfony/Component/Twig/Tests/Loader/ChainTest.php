@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Loader;
+namespace Symfony\Component\Twig\Tests\Loader;
 
 /*
  * This file is part of Twig.
@@ -21,11 +21,11 @@ namespace Twig\Tests\Loader;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Error\LoaderError;
-use Twig\Loader\ArrayLoader;
-use Twig\Loader\ChainLoader;
-use Twig\Loader\FilesystemLoader;
-use Twig\Loader\LoaderInterface;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Loader\ChainLoader;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Loader\LoaderInterface;
 
 class ChainTest extends TestCase
 {

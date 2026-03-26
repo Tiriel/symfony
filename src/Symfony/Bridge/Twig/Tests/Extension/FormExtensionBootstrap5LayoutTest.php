@@ -19,8 +19,8 @@ use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Security\Csrf\CsrfTokenManager;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\FilesystemLoader;
 
 /**
  * Class providing test cases for the Bootstrap 5 Twig form theme.

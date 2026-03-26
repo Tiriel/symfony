@@ -10,21 +10,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\Infix\DotExpressionParser;
-use Twig\ExpressionParser\Infix\FilterExpressionParser;
-use Twig\ExpressionParser\Infix\SquareBracketExpressionParser;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Unary\NegUnary;
-use Twig\Node\Expression\Unary\PosUnary;
-use Twig\Node\Expression\Unary\SpreadUnary;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\Infix\DotExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\FilterExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Infix\SquareBracketExpressionParser;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\NegUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\PosUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\SpreadUnary;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
 
 /**
  * Parses expressions.
@@ -208,11 +208,11 @@ class ExpressionParser
      *
      * @throws SyntaxError
      *
-     * @deprecated since Twig 3.19 Use Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments() instead
+     * @deprecated since Twig 3.19 Use Symfony\Component\Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments() instead
      */
     public function parseArguments()
     {
-        trigger_deprecation('twig/twig', '3.19', \sprintf('The "%s()" method is deprecated, use "Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments()" instead.', __METHOD__));
+        trigger_deprecation('twig/twig', '3.19', \sprintf('The "%s()" method is deprecated, use "Symfony\Component\Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments()" instead.', __METHOD__));
 
         $parsePrimaryExpression = new \ReflectionMethod($this->parser, 'parsePrimaryExpression');
 
@@ -358,11 +358,11 @@ class ExpressionParser
     }
 
     /**
-     * @deprecated since Twig 3.19 Use Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments() instead
+     * @deprecated since Twig 3.19 Use Symfony\Component\Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments() instead
      */
     public function parseOnlyArguments()
     {
-        trigger_deprecation('twig/twig', '3.19', \sprintf('The "%s()" method is deprecated, use "Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments()" instead.', __METHOD__));
+        trigger_deprecation('twig/twig', '3.19', \sprintf('The "%s()" method is deprecated, use "Symfony\Component\Twig\ExpressionParser\Infix\ArgumentsTrait::parseNamedArguments()" instead.', __METHOD__));
 
         return $this->parseArguments();
     }

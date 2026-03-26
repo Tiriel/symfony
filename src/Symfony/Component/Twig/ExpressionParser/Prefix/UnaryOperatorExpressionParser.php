@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser\Prefix;
+namespace Symfony\Component\Twig\ExpressionParser\Prefix;
 
-use Twig\ExpressionParser\AbstractExpressionParser;
-use Twig\ExpressionParser\ExpressionParserDescriptionInterface;
-use Twig\ExpressionParser\PrecedenceChange;
-use Twig\ExpressionParser\PrefixExpressionParserInterface;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\Unary\AbstractUnary;
-use Twig\Parser;
-use Twig\Token;
+use Symfony\Component\Twig\ExpressionParser\AbstractExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserDescriptionInterface;
+use Symfony\Component\Twig\ExpressionParser\PrecedenceChange;
+use Symfony\Component\Twig\ExpressionParser\PrefixExpressionParserInterface;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\AbstractUnary;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
 
 /**
  * @internal

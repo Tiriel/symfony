@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\NodeVisitor;
+namespace Symfony\Component\Twig\NodeVisitor;
 
-use Twig\Attribute\YieldReady;
-use Twig\Environment;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Attribute\YieldReady;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Node;
 
 /**
  * @internal to be removed in Twig 4
@@ -38,10 +38,10 @@ final class YieldNotReadyNodeVisitor implements NodeVisitorInterface
 
         if (!$this->yieldReadyNodes[$class] = (bool) (new \ReflectionClass($class))->getAttributes(YieldReady::class)) {
             if ($this->useYield) {
-                throw new \LogicException(\sprintf('You cannot enable the "use_yield" option of Twig as node "%s" is not marked as ready for it; please make it ready and then flag it with the #[\Twig\Attribute\YieldReady] attribute.', $class));
+                throw new \LogicException(\sprintf('You cannot enable the "use_yield" option of Twig as node "%s" is not marked as ready for it; please make it ready and then flag it with the #[\Symfony\Component\Twig\Attribute\YieldReady] attribute.', $class));
             }
 
-            trigger_deprecation('twig/twig', '3.9', 'Twig node "%s" is not marked as ready for using "yield" instead of "echo"; please make it ready and then flag it with the #[\Twig\Attribute\YieldReady] attribute.', $class);
+            trigger_deprecation('twig/twig', '3.9', 'Twig node "%s" is not marked as ready for using "yield" instead of "echo"; please make it ready and then flag it with the #[\Symfony\Component\Twig\Attribute\YieldReady] attribute.', $class);
         }
 
         return $node;

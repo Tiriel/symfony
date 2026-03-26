@@ -39,7 +39,6 @@
         "ext-xml": "*",
         "doctrine/event-manager": "^2",
         "doctrine/persistence": "^3.1|^4",
-        "twig/twig": "^3.21",
         "psr/cache": "^2.0|^3.0",
         "psr/clock": "^1.0",
         "psr/container": "^1.1|^2.0",
@@ -111,8 +110,10 @@
         "symfony/stopwatch": "self.version",
         "symfony/string": "self.version",
         "symfony/translation": "self.version",
+        "symfony/twig": "self.version",
         "symfony/twig-bridge": "self.version",
         "symfony/twig-bundle": "self.version",
+        "twig/twig": "self.version",
         "symfony/type-info": "self.version",
         "symfony/uid": "self.version",
         "symfony/validator": "self.version",
@@ -201,7 +202,11 @@
             "Symfony\\Runtime\\Symfony\\Component\\": "src/Symfony/Component/Runtime/Internal/"
         },
         "files": [
-            "src/Symfony/Component/String/Resources/functions.php"
+            "src/Symfony/Component/String/Resources/functions.php",
+            "src/Symfony/Component/Twig/Resources/core.php",
+            "src/Symfony/Component/Twig/Resources/debug.php",
+            "src/Symfony/Component/Twig/Resources/escaper.php",
+            "src/Symfony/Component/Twig/Resources/string_loader.php"
         ],
         "classmap": [
             "src/Symfony/Component/Cache/Traits/ValueWrapper.php"

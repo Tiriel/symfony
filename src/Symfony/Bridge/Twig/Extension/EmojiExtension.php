@@ -12,8 +12,8 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Emoji\EmojiTransliterator;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * @author Grégoire Pineau <lyrixx@lyrixx.info>

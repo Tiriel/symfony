@@ -15,12 +15,12 @@ use Symfony\Component\DependencyInjection\ChildDefinition;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Exception\LogicException;
-use Twig\Attribute\AsTwigFilter;
-use Twig\Attribute\AsTwigFunction;
-use Twig\Attribute\AsTwigTest;
-use Twig\Extension\AbstractExtension;
-use Twig\Extension\AttributeExtension;
-use Twig\Extension\ExtensionInterface;
+use Symfony\Component\Twig\Attribute\AsTwigFilter;
+use Symfony\Component\Twig\Attribute\AsTwigFunction;
+use Symfony\Component\Twig\Attribute\AsTwigTest;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Extension\AttributeExtension;
+use Symfony\Component\Twig\Extension\ExtensionInterface;
 
 /**
  * Register an instance of AttributeExtension for each service using the

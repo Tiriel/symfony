@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Loader;
+namespace Symfony\Component\Twig\Loader;
 
-use Twig\Error\LoaderError;
-use Twig\Source;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Source;
 
 /**
  * Loads template from the filesystem.

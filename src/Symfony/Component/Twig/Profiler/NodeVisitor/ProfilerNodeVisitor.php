@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Profiler\NodeVisitor;
+namespace Symfony\Component\Twig\Profiler\NodeVisitor;
 
-use Twig\Environment;
-use Twig\Node\BlockNode;
-use Twig\Node\BodyNode;
-use Twig\Node\MacroNode;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\NodeVisitor\NodeVisitorInterface;
-use Twig\Profiler\Node\EnterProfileNode;
-use Twig\Profiler\Node\LeaveProfileNode;
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\BlockNode;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\MacroNode;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\Profiler\Node\EnterProfileNode;
+use Symfony\Component\Twig\Profiler\Node\LeaveProfileNode;
+use Symfony\Component\Twig\Profiler\Profile;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

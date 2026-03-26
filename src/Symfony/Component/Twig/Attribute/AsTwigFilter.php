@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Attribute;
+namespace Symfony\Component\Twig\Attribute;
 
-use Twig\DeprecatedCallableInfo;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\DeprecatedCallableInfo;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * Registers a method as template filter.
  *
- * If the first argument of the method has Twig\Environment type-hint, the filter will receive the current environment.
+ * If the first argument of the method has Symfony\Component\Twig\Environment type-hint, the filter will receive the current environment.
  * Additional arguments of the method come from the filter call.
  *
  *     #[AsTwigFilter(name: 'foo')]

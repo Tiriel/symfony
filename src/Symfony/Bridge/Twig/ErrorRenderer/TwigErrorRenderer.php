@@ -15,7 +15,7 @@ use Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface;
 use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Twig\Environment;
+use Symfony\Component\Twig\Environment;
 
 /**
  * Provides the ability to render custom Twig-based HTML error pages

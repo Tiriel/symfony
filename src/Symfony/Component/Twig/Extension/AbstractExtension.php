@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Extension;
+namespace Symfony\Component\Twig\Extension;
 
 abstract class AbstractExtension implements LastModifiedExtensionInterface
 {

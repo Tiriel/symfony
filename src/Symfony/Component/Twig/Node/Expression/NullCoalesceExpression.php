@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression;
+namespace Symfony\Component\Twig\Node\Expression;
 
-use Twig\Compiler;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\Binary\AndBinary;
-use Twig\Node\Expression\Binary\NullCoalesceBinary;
-use Twig\Node\Expression\Test\DefinedTest;
-use Twig\Node\Expression\Test\NullTest;
-use Twig\Node\Expression\Unary\NotUnary;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\Binary\AndBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\NullCoalesceBinary;
+use Symfony\Component\Twig\Node\Expression\Test\DefinedTest;
+use Symfony\Component\Twig\Node\Expression\Test\NullTest;
+use Symfony\Component\Twig\Node\Expression\Unary\NotUnary;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigTest;
 
 class NullCoalesceExpression extends ConditionalExpression
 {

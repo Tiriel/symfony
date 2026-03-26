@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Profiler\Dumper;
+namespace Symfony\Component\Twig\Profiler\Dumper;
 
-use Twig\Profiler\Profile;
+use Symfony\Component\Twig\Profiler\Profile;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

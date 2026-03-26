@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Runtime;
+namespace Symfony\Component\Twig\Runtime;
 
-use Twig\Error\RuntimeError;
-use Twig\Extension\RuntimeExtensionInterface;
-use Twig\Markup;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\RuntimeExtensionInterface;
+use Symfony\Component\Twig\Markup;
 
 final class EscaperRuntime implements RuntimeExtensionInterface
 {

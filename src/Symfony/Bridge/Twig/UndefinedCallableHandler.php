@@ -13,9 +13,9 @@ namespace Symfony\Bridge\Twig;
 
 use Composer\InstalledVersions;
 use Symfony\Bundle\FullStack;
-use Twig\Error\SyntaxError;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * @internal

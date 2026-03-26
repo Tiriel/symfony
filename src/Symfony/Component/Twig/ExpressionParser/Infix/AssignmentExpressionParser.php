@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\ExpressionParser\Infix;
+namespace Symfony\Component\Twig\ExpressionParser\Infix;
 
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\InfixAssociativity;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\Binary\AbstractBinary;
-use Twig\Node\Expression\Binary\ObjectDestructuringSetBinary;
-use Twig\Node\Expression\Binary\SequenceDestructuringSetBinary;
-use Twig\Node\Expression\Binary\SetBinary;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Parser;
-use Twig\Token;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\InfixAssociativity;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\Binary\AbstractBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\ObjectDestructuringSetBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\SequenceDestructuringSetBinary;
+use Symfony\Component\Twig\Node\Expression\Binary\SetBinary;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
 
 /**
  * @internal

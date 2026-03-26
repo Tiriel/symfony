@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -20,22 +20,22 @@ namespace Twig\Tests\Node;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\BodyNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Ternary\ConditionalTernary;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\AssignTemplateVariable;
-use Twig\Node\Expression\Variable\TemplateVariable;
-use Twig\Node\ImportNode;
-use Twig\Node\ModuleNode;
-use Twig\Node\Nodes;
-use Twig\Node\SetNode;
-use Twig\Node\TextNode;
-use Twig\Source;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Ternary\ConditionalTernary;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignTemplateVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\TemplateVariable;
+use Symfony\Component\Twig\Node\ImportNode;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\SetNode;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class ModuleTest extends NodeTestCase
 {
@@ -73,19 +73,19 @@ class ModuleTest extends NodeTestCase
         $tests[] = [$node, <<<EOF
 <?php
 
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\SandboxExtension;
-use Twig\Markup;
-use Twig\Sandbox\SecurityError;
-use Twig\Sandbox\SecurityNotAllowedTagError;
-use Twig\Sandbox\SecurityNotAllowedFilterError;
-use Twig\Sandbox\SecurityNotAllowedFunctionError;
-use Twig\Source;
-use Twig\Template;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\SandboxExtension;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Sandbox\SecurityError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedTagError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFilterError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
 
 /* foo.twig */
 class __TwigTemplate_%x extends Template
@@ -148,19 +148,19 @@ EOF, $twig, true];
         $tests[] = [$node, <<<EOF
 <?php
 
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\SandboxExtension;
-use Twig\Markup;
-use Twig\Sandbox\SecurityError;
-use Twig\Sandbox\SecurityNotAllowedTagError;
-use Twig\Sandbox\SecurityNotAllowedFilterError;
-use Twig\Sandbox\SecurityNotAllowedFunctionError;
-use Twig\Source;
-use Twig\Template;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\SandboxExtension;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Sandbox\SecurityError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedTagError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFilterError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
 
 /* foo.twig */
 class __TwigTemplate_%x extends Template
@@ -242,19 +242,19 @@ EOF, $twig, true];
         $tests[] = [$node, <<<EOF
 <?php
 
-use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\SandboxExtension;
-use Twig\Markup;
-use Twig\Sandbox\SecurityError;
-use Twig\Sandbox\SecurityNotAllowedTagError;
-use Twig\Sandbox\SecurityNotAllowedFilterError;
-use Twig\Sandbox\SecurityNotAllowedFunctionError;
-use Twig\Source;
-use Twig\Template;
-use Twig\TemplateWrapper;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\LoaderError;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\SandboxExtension;
+use Symfony\Component\Twig\Markup;
+use Symfony\Component\Twig\Sandbox\SecurityError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedTagError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFilterError;
+use Symfony\Component\Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\Template;
+use Symfony\Component\Twig\TemplateWrapper;
 
 /* foo.twig */
 class __TwigTemplate_%x extends Template

@@ -22,7 +22,7 @@ use Symfony\Component\HttpKernel\Event\ControllerAttributeEvent;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\EventListener\ControllerAttributesListener;
 use Symfony\Component\HttpKernel\KernelEvents;
-use Twig\Environment;
+use Symfony\Component\Twig\Environment;
 
 class TemplateAttributeListener implements EventSubscriberInterface
 {

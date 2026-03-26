@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\NodeVisitor;
+namespace Symfony\Component\Twig\Tests\NodeVisitor;
 
 /*
  * This file is part of Twig.
@@ -21,17 +21,17 @@ namespace Twig\Tests\NodeVisitor;
  */
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\BodyNode;
-use Twig\Node\CheckToStringNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\ModuleNode;
-use Twig\Node\PrintNode;
-use Twig\NodeTraverser;
-use Twig\NodeVisitor\SandboxNodeVisitor;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\CheckToStringNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\NodeTraverser;
+use Symfony\Component\Twig\NodeVisitor\SandboxNodeVisitor;
+use Symfony\Component\Twig\Source;
 
 class SandboxTest extends TestCase
 {

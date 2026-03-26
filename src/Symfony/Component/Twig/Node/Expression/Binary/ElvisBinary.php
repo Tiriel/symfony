@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Binary;
+namespace Symfony\Component\Twig\Node\Expression\Binary;
 
-use Twig\Compiler;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\OperatorEscapeInterface;
-use Twig\Node\Node;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\OperatorEscapeInterface;
+use Symfony\Component\Twig\Node\Node;
 
 final class ElvisBinary extends AbstractBinary implements OperatorEscapeInterface
 {

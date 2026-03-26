@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\RuntimeLoader;
+namespace Symfony\Component\Twig\RuntimeLoader;
 
 /**
  * Creates runtime implementations for Twig elements (filters/functions/tests).

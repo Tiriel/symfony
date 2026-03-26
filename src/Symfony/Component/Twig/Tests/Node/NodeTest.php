@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node;
+namespace Symfony\Component\Twig\Tests\Node;
 
 /*
  * This file is part of Twig.
@@ -22,11 +22,11 @@ namespace Twig\Tests\Node;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Node\NameDeprecation;
-use Twig\Node\Node;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Node\NameDeprecation;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 class NodeTest extends TestCase
 {
@@ -38,7 +38,7 @@ class NodeTest extends TestCase
         $node = new NodeForTest([], ['value' => static function () { return '1'; }], 1);
 
         $this->assertEquals(<<<EOF
-Twig\Tests\Node\NodeForTest
+Symfony\Component\Twig\Tests\Node\NodeForTest
   attributes:
     value: \Closure
 EOF, (string) $node
@@ -54,11 +54,11 @@ EOF, (string) $node
         ], 1);
 
         $this->assertEquals(<<<EOF
-Twig\Tests\Node\NodeForTest
+Symfony\Component\Twig\Tests\Node\NodeForTest
   attributes:
-    function: Twig\TwigFunction(a_function)
-    filter: Twig\TwigFilter(a_filter)
-    test: Twig\TwigTest(a_test)
+    function: Symfony\Component\Twig\TwigFunction(a_function)
+    filter: Symfony\Component\Twig\TwigFilter(a_filter)
+    test: Symfony\Component\Twig\TwigTest(a_test)
 EOF, (string) $node);
     }
 
@@ -68,7 +68,7 @@ EOF, (string) $node);
         $node->setNodeTag('tag');
 
         $this->assertEquals(<<<EOF
-Twig\Tests\Node\NodeForTest
+Symfony\Component\Twig\Tests\Node\NodeForTest
   tag: tag
 EOF, (string) $node);
     }
@@ -89,7 +89,7 @@ EOF, (string) $node);
         $node = new NodeForTest([], ['foo' => false]);
         $node->deprecateAttribute('foo', new NameDeprecation('foo/bar', '2.0'));
 
-        $this->expectDeprecation('Since foo/bar 2.0: Getting attribute "foo" on a "Twig\Tests\Node\NodeForTest" class is deprecated.');
+        $this->expectDeprecation('Since foo/bar 2.0: Getting attribute "foo" on a "Symfony\Component\Twig\Tests\Node\NodeForTest" class is deprecated.');
         $this->assertFalse($node->getAttribute('foo'));
     }
 
@@ -101,7 +101,7 @@ EOF, (string) $node);
         $node = new NodeForTest([], ['foo' => false]);
         $node->deprecateAttribute('foo', new NameDeprecation('foo/bar', '2.0', 'bar'));
 
-        $this->expectDeprecation('Since foo/bar 2.0: Getting attribute "foo" on a "Twig\Tests\Node\NodeForTest" class is deprecated, get the "bar" attribute instead.');
+        $this->expectDeprecation('Since foo/bar 2.0: Getting attribute "foo" on a "Symfony\Component\Twig\Tests\Node\NodeForTest" class is deprecated, get the "bar" attribute instead.');
         $this->assertFalse($node->getAttribute('foo'));
     }
 
@@ -121,7 +121,7 @@ EOF, (string) $node);
         $node = new NodeForTest(['foo' => $foo = new NodeForTest()]);
         $node->deprecateNode('foo', new NameDeprecation('foo/bar', '2.0'));
 
-        $this->expectDeprecation('Since foo/bar 2.0: Getting node "foo" on a "Twig\Tests\Node\NodeForTest" class is deprecated.');
+        $this->expectDeprecation('Since foo/bar 2.0: Getting node "foo" on a "Symfony\Component\Twig\Tests\Node\NodeForTest" class is deprecated.');
         $this->assertSame($foo, $node->getNode('foo'));
     }
 
@@ -133,7 +133,7 @@ EOF, (string) $node);
         $node = new NodeForTest(['foo' => $foo = new NodeForTest()]);
         $node->deprecateNode('foo', new NameDeprecation('foo/bar', '2.0', 'bar'));
 
-        $this->expectDeprecation('Since foo/bar 2.0: Getting node "foo" on a "Twig\Tests\Node\NodeForTest" class is deprecated, get the "bar" node instead.');
+        $this->expectDeprecation('Since foo/bar 2.0: Getting node "foo" on a "Symfony\Component\Twig\Tests\Node\NodeForTest" class is deprecated, get the "bar" node instead.');
         $this->assertSame($foo, $node->getNode('foo'));
     }
 }

@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\TokenParser;
+namespace Symfony\Component\Twig\Tests\TokenParser;
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Parser;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Source;
 
 class TypesTokenParserTest extends TestCase
 {

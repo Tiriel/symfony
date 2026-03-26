@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\TokenParser;
+namespace Symfony\Component\Twig\TokenParser;
 
-use Twig\Lexer;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Nodes;
-use Twig\Parser;
-use Twig\Token;
+use Symfony\Component\Twig\Lexer;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Token;
 
 /**
  * Base class for all token parsers.

@@ -10,32 +10,32 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig;
+namespace Symfony\Component\Twig;
 
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\ExpressionParserInterface;
-use Twig\ExpressionParser\ExpressionParsers;
-use Twig\ExpressionParser\ExpressionParserType;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\ExpressionParser\Prefix\LiteralExpressionParser;
-use Twig\ExpressionParser\PrefixExpressionParserInterface;
-use Twig\Node\BlockNode;
-use Twig\Node\BlockReferenceNode;
-use Twig\Node\BodyNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\Variable\AssignTemplateVariable;
-use Twig\Node\Expression\Variable\TemplateVariable;
-use Twig\Node\MacroNode;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\Node\NodeCaptureInterface;
-use Twig\Node\NodeOutputInterface;
-use Twig\Node\Nodes;
-use Twig\Node\PrintNode;
-use Twig\Node\TextNode;
-use Twig\TokenParser\TokenParserInterface;
-use Twig\Util\ReflectionCallable;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParsers;
+use Symfony\Component\Twig\ExpressionParser\ExpressionParserType;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\Prefix\LiteralExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\PrefixExpressionParserInterface;
+use Symfony\Component\Twig\Node\BlockNode;
+use Symfony\Component\Twig\Node\BlockReferenceNode;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignTemplateVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\TemplateVariable;
+use Symfony\Component\Twig\Node\MacroNode;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\NodeCaptureInterface;
+use Symfony\Component\Twig\Node\NodeOutputInterface;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\PrintNode;
+use Symfony\Component\Twig\Node\TextNode;
+use Symfony\Component\Twig\TokenParser\TokenParserInterface;
+use Symfony\Component\Twig\Util\ReflectionCallable;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

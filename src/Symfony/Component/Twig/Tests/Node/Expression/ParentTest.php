@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
 /*
  * This file is part of Twig.
@@ -20,8 +20,8 @@ namespace Twig\Tests\Node\Expression;
  * file that was distributed with this source code.
  */
 
-use Twig\Node\Expression\ParentExpression;
-use Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\Node\Expression\ParentExpression;
+use Symfony\Component\Twig\Test\NodeTestCase;
 
 class ParentTest extends NodeTestCase
 {

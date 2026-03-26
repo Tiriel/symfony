@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Node\Expression;
+namespace Symfony\Component\Twig\Tests\Node\Expression;
 
 /*
  * This file is part of Twig.
@@ -20,15 +20,15 @@ namespace Twig\Tests\Node\Expression;
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\Test\NullTest;
-use Twig\Node\Expression\TestExpression;
-use Twig\Node\Nodes;
-use Twig\Test\NodeTestCase;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\Test\NullTest;
+use Symfony\Component\Twig\Node\Expression\TestExpression;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Test\NodeTestCase;
+use Symfony\Component\Twig\TwigTest;
 
 class TestTest extends NodeTestCase
 {
@@ -61,13 +61,13 @@ class TestTest extends NodeTestCase
         // arbitrary named arguments
         $string = new ConstantExpression('abc', 1);
         $node = self::createTest($environment, $string, 'barbar');
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_test_barbar("abc")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_test_barbar("abc")', $environment];
 
         $node = self::createTest($environment, $string, 'barbar', ['foo' => new ConstantExpression('bar', 1)]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", null, null, ["foo" => "bar"])', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", null, null, ["foo" => "bar"])', $environment];
 
         $node = self::createTest($environment, $string, 'barbar', ['arg2' => new ConstantExpression('bar', 1)]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", null, "bar")', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", null, "bar")', $environment];
 
         $node = self::createTest($environment, $string, 'barbar', [
             new ConstantExpression('1', 1),
@@ -75,7 +75,7 @@ class TestTest extends NodeTestCase
             new ConstantExpression('3', 1),
             'foo' => new ConstantExpression('bar', 1),
         ]);
-        $tests[] = [$node, 'Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", "1", "2", ["3", "foo" => "bar"])', $environment];
+        $tests[] = [$node, 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_test_barbar("abc", "1", "2", ["3", "foo" => "bar"])', $environment];
 
         return $tests;
     }
@@ -89,7 +89,7 @@ class TestTest extends NodeTestCase
     {
         $env = new Environment(new ArrayLoader());
         $env->addTest(new TwigTest('anonymous', static function () {}));
-        $env->addTest(new TwigTest('barbar', 'Twig\Tests\Node\Expression\twig_tests_test_barbar', ['is_variadic' => true, 'need_context' => true]));
+        $env->addTest(new TwigTest('barbar', 'Symfony\Component\Twig\Tests\Node\Expression\twig_tests_test_barbar', ['is_variadic' => true, 'need_context' => true]));
 
         return $env;
     }

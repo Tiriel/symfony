@@ -12,8 +12,8 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Yaml\Dumper as YamlDumper;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * Provides integration of the Yaml component with Twig.

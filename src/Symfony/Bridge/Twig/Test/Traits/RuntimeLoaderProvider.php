@@ -13,8 +13,8 @@ namespace Symfony\Bridge\Twig\Test\Traits;
 
 use Symfony\Component\DependencyInjection\ServiceLocator;
 use Symfony\Component\Form\FormRenderer;
-use Twig\Environment;
-use Twig\RuntimeLoader\ContainerRuntimeLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\RuntimeLoader\ContainerRuntimeLoader;
 
 trait RuntimeLoaderProvider
 {

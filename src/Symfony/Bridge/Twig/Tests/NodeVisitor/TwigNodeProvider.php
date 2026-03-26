@@ -13,15 +13,15 @@ namespace Symfony\Bridge\Twig\Tests\NodeVisitor;
 
 use Symfony\Bridge\Twig\Node\TransDefaultDomainNode;
 use Symfony\Bridge\Twig\Node\TransNode;
-use Twig\Node\BodyNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\ModuleNode;
-use Twig\Node\Nodes;
-use Twig\Source;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Node\BodyNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\TwigFilter;
 
 class TwigNodeProvider
 {

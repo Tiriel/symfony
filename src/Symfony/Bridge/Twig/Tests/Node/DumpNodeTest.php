@@ -13,11 +13,11 @@ namespace Symfony\Bridge\Twig\Tests\Node;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Node\DumpNode;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Nodes;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Nodes;
 
 class DumpNodeTest extends TestCase
 {
@@ -32,7 +32,7 @@ class DumpNodeTest extends TestCase
             if ($this->env->isDebug()) {
                 $barvars = [];
                 foreach ($context as $barkey => $barval) {
-                    if (!$barval instanceof \Twig\Template) {
+                    if (!$barval instanceof \Symfony\Component\Twig\Template) {
                         $barvars[$barkey] = $barval;
                     }
                 }
@@ -56,7 +56,7 @@ class DumpNodeTest extends TestCase
                 if ($this->env->isDebug()) {
                     $barvars = [];
                     foreach ($context as $barkey => $barval) {
-                        if (!$barval instanceof \Twig\Template) {
+                        if (!$barval instanceof \Symfony\Component\Twig\Template) {
                             $barvars[$barkey] = $barval;
                         }
                     }

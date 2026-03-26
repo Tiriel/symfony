@@ -13,19 +13,19 @@ namespace Symfony\Bridge\Twig\NodeVisitor;
 
 use Symfony\Bridge\Twig\Node\TransDefaultDomainNode;
 use Symfony\Bridge\Twig\Node\TransNode;
-use Twig\Environment;
-use Twig\Node\BlockNode;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\Variable\AssignContextVariable;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\ModuleNode;
-use Twig\Node\Node;
-use Twig\Node\Nodes;
-use Twig\Node\SetNode;
-use Twig\NodeVisitor\NodeVisitorInterface;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Node\BlockNode;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\Variable\AssignContextVariable;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\ModuleNode;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Node\SetNode;
+use Symfony\Component\Twig\NodeVisitor\NodeVisitorInterface;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

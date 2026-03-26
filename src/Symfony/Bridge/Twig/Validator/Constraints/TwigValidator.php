@@ -15,10 +15,10 @@ use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
-use Twig\Environment;
-use Twig\Error\Error;
-use Twig\Loader\ArrayLoader;
-use Twig\Source;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\Error;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Source;
 
 /**
  * @author Mokhtar Tlili <tlili.mokhtar@gmail.com>

@@ -9,22 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Filter;
+namespace Symfony\Component\Twig\Node\Expression\Filter;
 
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\Compiler;
-use Twig\Extension\CoreExtension;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\AbstractExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\GetAttrExpression;
-use Twig\Node\Expression\Ternary\ConditionalTernary;
-use Twig\Node\Expression\Test\DefinedTest;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\TwigFilter;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\AbstractExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\GetAttrExpression;
+use Symfony\Component\Twig\Node\Expression\Ternary\ConditionalTernary;
+use Symfony\Component\Twig\Node\Expression\Test\DefinedTest;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigTest;
 
 /**
  * Returns the value or the default value when it is undefined or empty.

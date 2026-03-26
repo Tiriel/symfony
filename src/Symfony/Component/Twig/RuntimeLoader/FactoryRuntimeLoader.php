@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\RuntimeLoader;
+namespace Symfony\Component\Twig\RuntimeLoader;
 
 /**
  * Lazy loads the runtime implementations for a Twig element.

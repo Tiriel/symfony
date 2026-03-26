@@ -15,8 +15,8 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Twig\Extension\HtmlSanitizerExtension;
 use Symfony\Component\DependencyInjection\ServiceLocator;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizerInterface;
-use Twig\Environment;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class HtmlSanitizerExtensionTest extends TestCase
 {

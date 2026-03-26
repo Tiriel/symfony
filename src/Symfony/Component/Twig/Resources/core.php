@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-use Twig\Environment;
-use Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\CoreExtension;
 
 /**
  * @internal

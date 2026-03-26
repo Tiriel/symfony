@@ -11,8 +11,8 @@
 
 namespace Symfony\Bridge\Twig\Extension;
 
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFilter;
 
 /**
  * @author Jesse Rushlow <jr@rushlow.dev>

@@ -12,11 +12,11 @@
 namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Twig\Extension\AbstractExtension;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Node;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Provides integration of the Routing component with Twig.

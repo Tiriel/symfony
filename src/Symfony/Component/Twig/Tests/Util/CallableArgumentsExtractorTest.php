@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Util;
+namespace Symfony\Component\Twig\Tests\Util;
 
 /*
  * This file is part of Twig.
@@ -22,15 +22,15 @@ namespace Twig\Tests\Util;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Error\SyntaxError;
-use Twig\Node\EmptyNode;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Expression\VariadicExpression;
-use Twig\Node\Nodes;
-use Twig\Source;
-use Twig\TwigFunction;
-use Twig\Util\CallableArgumentsExtractor;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\Node\EmptyNode;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Expression\VariadicExpression;
+use Symfony\Component\Twig\Node\Nodes;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\Util\CallableArgumentsExtractor;
 
 class CallableArgumentsExtractorTest extends TestCase
 {
@@ -146,7 +146,7 @@ class CallableArgumentsExtractorTest extends TestCase
     public function testResolveArgumentsWithMissingParameterForArbitraryArguments()
     {
         $this->expectException(SyntaxError::class);
-        $this->expectExceptionMessage('The last parameter of "Twig\\Tests\\Util\\CallableArgumentsExtractorTest::customFunctionWithArbitraryArguments" for function "foo" must be an array with default value, eg. "array $arg = []".');
+        $this->expectExceptionMessage('The last parameter of "Symfony\Component\Twig\\Tests\\Util\\CallableArgumentsExtractorTest::customFunctionWithArbitraryArguments" for function "foo" must be an array with default value, eg. "array $arg = []".');
 
         $this->getArguments('foo', [$this, 'customFunctionWithArbitraryArguments'], [], true);
     }
@@ -161,15 +161,15 @@ class CallableArgumentsExtractorTest extends TestCase
     public function testResolveArgumentsWithMissingParameterForArbitraryArgumentsOnFunction()
     {
         $this->expectException(SyntaxError::class);
-        $this->expectExceptionMessageMatches('#^The last parameter of "Twig\\\\Tests\\\\Util\\\\custom_call_test_function" for function "foo" must be an array with default value, eg\\. "array \\$arg \\= \\[\\]"\\.$#');
+        $this->expectExceptionMessageMatches('#^The last parameter of "Symfony\Component\Twig\\\\Tests\\\\Util\\\\custom_call_test_function" for function "foo" must be an array with default value, eg\\. "array \\$arg \\= \\[\\]"\\.$#');
 
-        $this->getArguments('foo', 'Twig\Tests\Util\custom_call_test_function', [], true);
+        $this->getArguments('foo', 'Symfony\Component\Twig\Tests\Util\custom_call_test_function', [], true);
     }
 
     public function testResolveArgumentsWithMissingParameterForArbitraryArgumentsOnObject()
     {
         $this->expectException(SyntaxError::class);
-        $this->expectExceptionMessageMatches('#^The last parameter of "Twig\\\\Tests\\\\Util\\\\CallableTestClass\\:\\:__invoke" for function "foo" must be an array with default value, eg\\. "array \\$arg \\= \\[\\]"\\.$#');
+        $this->expectExceptionMessageMatches('#^The last parameter of "Symfony\Component\Twig\\\\Tests\\\\Util\\\\CallableTestClass\\:\\:__invoke" for function "foo" must be an array with default value, eg\\. "array \\$arg \\= \\[\\]"\\.$#');
 
         $this->getArguments('foo', new CallableTestClass(), [], true);
     }

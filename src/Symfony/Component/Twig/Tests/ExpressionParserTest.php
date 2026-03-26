@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests;
+namespace Symfony\Component\Twig\Tests;
 
 /*
  * This file is part of Twig.
@@ -22,32 +22,32 @@ namespace Twig\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\ExpectDeprecationTrait;
-use Twig\Attribute\FirstClassTwigCallableReady;
-use Twig\Compiler;
-use Twig\Environment;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\ExpressionParser\InfixExpressionParserInterface;
-use Twig\ExpressionParser\Prefix\LiteralExpressionParser;
-use Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
-use Twig\ExpressionParser\PrefixExpressionParserInterface;
-use Twig\Extension\AbstractExtension;
-use Twig\Loader\ArrayLoader;
-use Twig\Node\Expression\ArrayExpression;
-use Twig\Node\Expression\Binary\ConcatBinary;
-use Twig\Node\Expression\ConstantExpression;
-use Twig\Node\Expression\FilterExpression;
-use Twig\Node\Expression\FunctionExpression;
-use Twig\Node\Expression\TestExpression;
-use Twig\Node\Expression\Unary\AbstractUnary;
-use Twig\Node\Expression\Unary\SpreadUnary;
-use Twig\Node\Expression\Variable\ContextVariable;
-use Twig\Node\Node;
-use Twig\Parser;
-use Twig\Source;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
-use Twig\TwigTest;
+use Symfony\Component\Twig\Attribute\FirstClassTwigCallableReady;
+use Symfony\Component\Twig\Compiler;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Error\RuntimeError;
+use Symfony\Component\Twig\Error\SyntaxError;
+use Symfony\Component\Twig\ExpressionParser\InfixExpressionParserInterface;
+use Symfony\Component\Twig\ExpressionParser\Prefix\LiteralExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\Prefix\UnaryOperatorExpressionParser;
+use Symfony\Component\Twig\ExpressionParser\PrefixExpressionParserInterface;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Node\Expression\ArrayExpression;
+use Symfony\Component\Twig\Node\Expression\Binary\ConcatBinary;
+use Symfony\Component\Twig\Node\Expression\ConstantExpression;
+use Symfony\Component\Twig\Node\Expression\FilterExpression;
+use Symfony\Component\Twig\Node\Expression\FunctionExpression;
+use Symfony\Component\Twig\Node\Expression\TestExpression;
+use Symfony\Component\Twig\Node\Expression\Unary\AbstractUnary;
+use Symfony\Component\Twig\Node\Expression\Unary\SpreadUnary;
+use Symfony\Component\Twig\Node\Expression\Variable\ContextVariable;
+use Symfony\Component\Twig\Node\Node;
+use Symfony\Component\Twig\Parser;
+use Symfony\Component\Twig\Source;
+use Symfony\Component\Twig\TwigFilter;
+use Symfony\Component\Twig\TwigFunction;
+use Symfony\Component\Twig\TwigTest;
 
 class ExpressionParserTest extends TestCase
 {
@@ -608,8 +608,8 @@ class ExpressionParserTest extends TestCase
      */
     public function testNotReadyFunction()
     {
-        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Twig\Tests\NotReadyFunctionExpression" is not marked as ready for passing a "TwigFunction" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
-        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigFunction" when creating a "foo" function of type "Twig\Tests\NotReadyFunctionExpression" is deprecated.');
+        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Symfony\Component\Twig\Tests\NotReadyFunctionExpression" is not marked as ready for passing a "TwigFunction" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
+        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigFunction" when creating a "foo" function of type "Symfony\Component\Twig\Tests\NotReadyFunctionExpression" is deprecated.');
 
         $env = new Environment(new ArrayLoader(), ['cache' => false, 'autoescape' => false]);
         $env->addFunction(new TwigFunction('foo', 'foo', ['node_class' => NotReadyFunctionExpression::class]));
@@ -623,8 +623,8 @@ class ExpressionParserTest extends TestCase
      */
     public function testNotReadyFilter()
     {
-        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Twig\Tests\NotReadyFilterExpression" is not marked as ready for passing a "TwigFilter" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
-        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigFilter" when creating a "foo" filter of type "Twig\Tests\NotReadyFilterExpression" is deprecated.');
+        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Symfony\Component\Twig\Tests\NotReadyFilterExpression" is not marked as ready for passing a "TwigFilter" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
+        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigFilter" when creating a "foo" filter of type "Symfony\Component\Twig\Tests\NotReadyFilterExpression" is deprecated.');
 
         $env = new Environment(new ArrayLoader(), ['cache' => false, 'autoescape' => false]);
         $env->addFilter(new TwigFilter('foo', 'foo', ['node_class' => NotReadyFilterExpression::class]));
@@ -638,8 +638,8 @@ class ExpressionParserTest extends TestCase
      */
     public function testNotReadyTest()
     {
-        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Twig\Tests\NotReadyTestExpression" is not marked as ready for passing a "TwigTest" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
-        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigTest" when creating a "foo" test of type "Twig\Tests\NotReadyTestExpression" is deprecated.');
+        $this->expectDeprecation('Since twig/twig 3.12: Twig node "Symfony\Component\Twig\Tests\NotReadyTestExpression" is not marked as ready for passing a "TwigTest" in the constructor instead of its name; please update your code and then add #[FirstClassTwigCallableReady] attribute to the constructor.');
+        $this->expectDeprecation('Since twig/twig 3.12: Not passing an instance of "TwigTest" when creating a "foo" test of type "Symfony\Component\Twig\Tests\NotReadyTestExpression" is deprecated.');
 
         $env = new Environment(new ArrayLoader(), ['cache' => false, 'autoescape' => false]);
         $env->addTest(new TwigTest('foo', 'foo', ['node_class' => NotReadyTestExpression::class]));

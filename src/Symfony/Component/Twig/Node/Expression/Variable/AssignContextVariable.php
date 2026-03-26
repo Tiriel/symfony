@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Node\Expression\Variable;
+namespace Symfony\Component\Twig\Node\Expression\Variable;
 
-use Twig\Node\Expression\AssignNameExpression;
+use Symfony\Component\Twig\Node\Expression\AssignNameExpression;
 
 final class AssignContextVariable extends AssignNameExpression
 {

@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Twig\Tests\Extension;
+namespace Symfony\Component\Twig\Tests\Extension;
 
 use PHPUnit\Framework\TestCase;
-use Twig\Environment;
-use Twig\Extension\CoreExtension;
-use Twig\Extension\StringLoaderExtension;
-use Twig\Loader\ArrayLoader;
+use Symfony\Component\Twig\Environment;
+use Symfony\Component\Twig\Extension\CoreExtension;
+use Symfony\Component\Twig\Extension\StringLoaderExtension;
+use Symfony\Component\Twig\Loader\ArrayLoader;
 
 class StringLoaderExtensionTest extends TestCase
 {

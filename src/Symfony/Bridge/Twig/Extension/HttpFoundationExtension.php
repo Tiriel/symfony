@@ -13,8 +13,8 @@ namespace Symfony\Bridge\Twig\Extension;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\UrlHelper;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Symfony\Component\Twig\Extension\AbstractExtension;
+use Symfony\Component\Twig\TwigFunction;
 
 /**
  * Twig extension for the Symfony HttpFoundation component.
